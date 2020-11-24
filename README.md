@@ -1,6 +1,6 @@
 # walt-android
 ## Walt钱包
- [华特东方官网](https://www.orientwalt.com/)
+ - [华特东方官网(HTDF)](https://www.orientwalt.com/)
  - [Walt钱包Android版本下载](https://www.orientwalt.com/share.html)
  
 > 简介
