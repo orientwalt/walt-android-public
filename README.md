@@ -7,7 +7,7 @@
 - 使用开源bitcoinj、web3j、BIP39库为基础开发的
 - 支持中文英文助记词
 
-> 壹佳壹公链 Path
+> 华特东方 Path
 - HTDF
 **44'346'0'0**
 - USDP (已变为HTDFtoken)链已关闭
