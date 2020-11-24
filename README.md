@@ -1,6 +1,8 @@
 # walt-android
-## 华特钱包
+## Walt钱包
  [华特东方官网](https://www.orientwalt.com/)
+ - [Walt钱包Android版本下载] https://www.orientwalt.com/share.html
+ 
 > 简介
 - 是一个分层确定性钱包，遵循BIP32、bip39、bip44等标准
 - 支持htdf、usdp、btc、eth、erc-20、usdt（omni）、bsv、bch、ltc、dash币种转账查询等功能
