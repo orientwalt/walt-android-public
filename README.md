@@ -13,10 +13,10 @@
 - USDP (已变为HTDFtoken)链已关闭
 **44'345'0'0**
 - HET (已变为HTDFtoken)链已关闭
-
 **44'368'0'0**
 
 > API
+- [htdfscan](https://www.htdfscan.com) HTDF
 - [Tokenview] https://tokenview.com/ 查询交易记录等
 - [blockcypher](https://www.blockcypher.com/) BTC、LTC、DASH
 - [bitprim](https://bitprim.github.io/docs/restapi/bitprim-api.html#bitprim_v1) BCH
