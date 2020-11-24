@@ -3,7 +3,7 @@
  [华特东方官网](https://www.orientwalt.com/)
 > 简介
 - 是一个分层确定性钱包，遵循BIP32、bip39、bip44等标准
-- 支持htdf、usdp、btc、eth、usdt（omni）、bsv、bch、ltc、dash币种转账查询等功能
+- 支持htdf、usdp、btc、eth、erc-20、usdt（omni）、bsv、bch、ltc、dash币种转账查询等功能
 - 使用开源bitcoinj、web3j、BIP39库为基础开发的
 - 支持中文英文助记词
 
@@ -29,6 +29,7 @@
 
 > 区块链浏览器
 
+- [htdfscan](https://www.htdfscan.com/api) HTDF
 - [bchsvexplorer](https://bchsvexplorer.com) BSV
 - [BSV浏览器大全](https://bitcoinsv.io/zh/services/block-explorers/) 
 - [BTC](https://btc.com) BTC、BCH
@@ -39,7 +40,7 @@
 - [etherscan](https://etherscan.io/) ETH
 - [insight](https://insight.dash.org/insight/) DASH
 
-
+>开发者
 - 575256725@qq.com
 
 
