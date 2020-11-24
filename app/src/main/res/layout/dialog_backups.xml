@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_white_shape">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp52"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/import_dialog_title"
+        android:textColor="@color/txt_333333"
+        android:textSize="@dimen/dp16" />
+
+    <RelativeLayout
+        android:id="@+id/right_layout"
+        android:layout_width="@dimen/dp50"
+        android:layout_height="@dimen/dp52"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/common_tab_bg">
+
+        <TextView
+            android:id="@+id/left_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/close_icon" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="@dimen/dp8"
+        android:background="@drawable/btn_e4edff_shape"
+        android:padding="@dimen/dp16"
+        android:text="@string/create_dialog_txt"
+        android:textColor="@color/txt_333333" />
+
+    <RelativeLayout
+        android:id="@+id/rl_words"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_txt"
+        android:layout_marginHorizontal="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp16"
+        android:paddingVertical="@dimen/dp12">
+
+        <ImageView
+            android:id="@+id/iv_words"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp8"
+            android:src="@mipmap/beifenzhujici" />
+
+        <TextView
+            android:id="@+id/tv_words"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp8"
+            android:layout_toRightOf="@+id/iv_words"
+            android:text="@string/create_dialog_words"
+            android:textColor="@color/txt_333333"
+            android:textSize="@dimen/dp16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_words"
+            android:layout_toRightOf="@+id/iv_words"
+            android:text="@string/create_dialog_words_hint"
+            android:textColor="@color/txt_333333"
+            android:textSize="@dimen/dp14" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_words"
+        android:layout_marginHorizontal="@dimen/dp16"
+        android:paddingVertical="@dimen/dp12"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp8"
+            android:src="@mipmap/beifenzhujici" />
+
+        <TextView
+            android:id="@+id/tv_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp8"
+            android:layout_toRightOf="@+id/iv_key"
+            android:text="@string/create_dialog_key"
+            android:textColor="@color/txt_333333"
+            android:textSize="@dimen/dp16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_key"
+            android:layout_toRightOf="@+id/iv_key"
+            android:text="@string/create_dialog_key_hint"
+            android:textColor="@color/txt_333333"
+            android:textSize="@dimen/dp14" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/btn_backups"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_key"
+        android:layout_marginHorizontal="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_5f8def_selector"
+        android:elevation="@dimen/dp2"
+        android:gravity="center"
+        android:paddingVertical="@dimen/dp12"
+        android:text="@string/create_dialog_btn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp16" />
+</RelativeLayout>

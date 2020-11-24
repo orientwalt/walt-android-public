@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_coin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableRefresh="false">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv_record"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <TextView
+        android:id="@+id/tv_null"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="@dimen/dp32"
+        android:layout_marginTop="@dimen/dp100"
+        android:drawableTop="@mipmap/null_icon"
+        android:elevation="@dimen/elevation_4"
+        android:gravity="center"
+        android:text="@string/send_not_data"
+        android:textColor="@color/txt_8f95a9"
+        android:textSize="@dimen/sp15"
+        android:visibility="gone" />
+</RelativeLayout>

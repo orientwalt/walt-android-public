@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.weiyu.baselib.widget.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleBarBackground="@color/white"
+        app:titleBarLeftImage="@mipmap/back_icon"
+        app:titleBarTitle="@string/add_token_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="@color/white" />
+
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/tl_import"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_below="@+id/tb_title"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        app:xTabDividerWidthWidthText="true"
+        app:xTabIndicatorColor="@color/bg_3B83FC"
+        app:xTabIndicatorHeight="@dimen/dp4"
+        app:xTabIndicatorRoundX="@dimen/dp2"
+        app:xTabIndicatorRoundY="@dimen/dp2"
+        app:xTabMode="scrollable"
+        app:xTabSelectedTextColor="@color/tx_364964"
+        app:xTabSelectedTextSize="@dimen/sp16"
+        app:xTabTextColor="@color/tx_8F95A9"
+        app:xTabTextSize="@dimen/sp16" />
+
+    <fragment
+        android:id="@+id/fg_usdt"
+        android:name="com.yjy.wallet.ui.fragment.AssetsStableFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

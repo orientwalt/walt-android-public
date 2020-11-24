@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="wallet_db" />
+
+    <version value="26" />
+
+    <list>
+        <mapping class="com.yjy.wallet.bean.TxItem" />
+        <mapping class="com.yjy.wallet.bean.Address" />
+        <mapping class="com.yjy.wallet.bean.ERCBean" />
+        <mapping class="com.yjy.wallet.bean.NotificationMsg" />
+    </list>
+</litepal>

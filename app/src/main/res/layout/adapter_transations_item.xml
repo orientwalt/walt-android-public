@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_n_selector"
+    android:paddingHorizontal="@dimen/dp12">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp12"
+        android:src="@mipmap/transfer_in" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="@dimen/dp120"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp8"
+        android:layout_marginRight="@dimen/dp8"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:ellipsize="middle"
+        android:maxWidth="@dimen/dp120"
+        android:singleLine="true"
+        android:textColor="@color/txt_333333"
+        android:textSize="@dimen/sp14" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_price"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp8"
+        android:layout_toLeftOf="@id/iv_go"
+        android:layout_toRightOf="@+id/tv_address"
+        android:autoSizeMaxTextSize="@dimen/dp14"
+        android:autoSizeMinTextSize="@dimen/dp10"
+        android:enabled="false"
+        android:gravity="center_vertical|right"
+        android:textSize="@dimen/dp14"
+        app:autoSizeStepGranularity="1dp"
+        app:autoSizeTextType="uniform" />
+
+    <TextView
+        android:id="@+id/tv_exchang_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_address"
+        android:layout_marginTop="@dimen/dp8"
+        android:layout_marginBottom="@dimen/dp8"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:textColor="@color/txt_8f95a9"
+        android:textSize="@dimen/sp13" />
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_exchang_time"
+        android:layout_toLeftOf="@+id/iv_go"
+        android:textColor="@color/txt_8f95a9"
+        android:textSize="@dimen/sp14" />
+
+    <ImageView
+        android:id="@+id/iv_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp8"
+        android:src="@mipmap/go_icon" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:layout_below="@+id/tv_exchang_time"
+        android:background="@color/line_dddddd" />
+
+</RelativeLayout>

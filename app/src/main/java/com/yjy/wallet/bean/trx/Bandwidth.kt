@@ -1,0 +1,23 @@
+package com.yjy.wallet.bean.trx
+
+data class Bandwidth(val energyRemaining: Int = 0,
+                     val totalEnergyLimit: Long = 0,
+                     val totalEnergyWeight: Int = 0,
+                     val netUsed: Int = 0,
+                     val storageLimit: Int = 0,
+                     val storagePercentage: Int = 0,
+                     val assets: Any? = null,
+                     val netPercentage: Int = 0,
+                     val storageUsed: Int = 0,
+                     val storageRemaining: Int = 0,
+                     val freeNetLimit: Int = 0,
+                     val energyUsed: Int = 0,
+                     val freeNetRemaining: Int = 0,
+                     val netLimit: Int = 0,
+                     val netRemaining: Int = 0,
+                     val energyLimit: Int = 0,
+                     val freeNetUsed: Int = 0,
+                     val totalNetWeight: Long = 0,
+                     val freeNetPercentage: Int = 0,
+                     val energyPercentage: Int = 0,
+                     val totalNetLimit: Long = 0)

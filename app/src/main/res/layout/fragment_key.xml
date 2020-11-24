@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp16"
+                android:layout_marginTop="@dimen/dp16"
+                android:text="@string/exportkey_sure"
+                android:textColor="@color/txt_333333"
+                android:textSize="@dimen/sp15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp16"
+                android:layout_marginTop="@dimen/dp8"
+                android:text="@string/exportkey_sure_hint"
+                android:textColor="@color/txt_46607f"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_marginTop="@dimen/dp16"
+                android:text="@string/exportkey_sure1"
+                android:textColor="@color/txt_333333"
+                android:textSize="@dimen/sp15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp16"
+                android:layout_marginTop="@dimen/dp8"
+                android:text="@string/exportkey_sure_hint1"
+                android:textColor="@color/txt_46607f"
+                android:textSize="@dimen/dp14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_marginTop="@dimen/dp16"
+                android:text="@string/exportkey_sure2"
+                android:textColor="@color/txt_333333"
+                android:textSize="@dimen/sp15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp16"
+                android:layout_marginTop="@dimen/dp8"
+                android:text="@string/exportkey_sure_hint2"
+                android:textColor="@color/txt_46607f"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/tv_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp16"
+                android:layout_marginTop="@dimen/dp16"
+                android:background="@drawable/btn_f5f5f5_shape"
+                android:padding="@dimen/sp15" />
+
+            <Button
+                android:id="@+id/btn_copy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp32"
+                android:layout_marginVertical="@dimen/dp32"
+                android:background="@drawable/btn_5f8def_selector"
+                android:text="@string/exportkey_next"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

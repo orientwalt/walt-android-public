@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_f5f5fb"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.weiyu.baselib.widget.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:elevation="@dimen/elevation_1"
+        android:layout_height="wrap_content"
+        app:titleBarBackground="@color/white"
+        app:titleBarLeftImage="@mipmap/back_icon"
+        app:titleBarTitle="@string/add_addr_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:elevation="@dimen/elevation_1"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dp8"
+        android:elevation="@dimen/elevation_1"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp52"
+            android:background="@color/white"
+            android:hint="@string/add_addr_name"
+            android:maxLength="20"
+            android:paddingHorizontal="@dimen/dp16"
+            android:singleLine="true"
+            android:textSize="@dimen/dp14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:layout_marginHorizontal="@dimen/dp16"
+            android:background="@color/line_dddddd" />
+
+        <EditText
+            android:id="@+id/et_remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="@string/add_addr_remarck"
+            android:maxLength="100"
+            android:minHeight="@dimen/dp52"
+            android:paddingHorizontal="@dimen/dp16"
+            android:textSize="@dimen/dp14" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp14"
+        android:drawableLeft="@mipmap/location_icon"
+        android:drawablePadding="@dimen/dp4"
+        android:text="@string/add_addr_address"
+        android:textSize="@dimen/sp15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/elevation_1"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_type"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp42"
+            android:layout_marginHorizontal="@dimen/dp16"
+            android:layout_marginVertical="@dimen/dp8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp14"
+                android:layout_centerVertical="true"
+                android:text="@string/add_addr_addr_type" />
+
+            <ImageView
+                android:id="@+id/iv_coin"
+                android:layout_width="@dimen/dp20"
+                android:layout_height="@dimen/dp20"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp4"
+                android:layout_toLeftOf="@+id/tv_type"
+                android:textColor="@color/txt_333333" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp8"
+                android:layout_toLeftOf="@+id/iv_go"
+                android:textColor="@color/txt_333333"
+                android:textSize="@dimen/sp18" />
+
+            <ImageView
+                android:id="@+id/iv_go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tv_type"
+                android:layout_alignBottom="@+id/tv_type"
+                android:scaleType="center"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/go_icon" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:layout_marginHorizontal="@dimen/dp16"
+            android:background="@color/line_dddddd" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp42"
+            android:layout_marginHorizontal="@dimen/dp16"
+            android:layout_marginVertical="@dimen/dp8"
+            android:layout_marginBottom="@dimen/dp8">
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/rl_scan"
+                android:background="@null"
+                android:hint="@string/add_addr_input"
+                android:maxLength="100"
+                android:singleLine="true"
+                android:textSize="@dimen/dp14" />
+
+            <RelativeLayout
+                android:id="@+id/rl_scan"
+                android:layout_width="@dimen/dp42"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/common_tab_bg">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/index_scan_icon" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

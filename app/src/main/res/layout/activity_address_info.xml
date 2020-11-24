@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_f5f5fb"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.weiyu.baselib.widget.TitleBar
+        android:id="@+id/title_tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/elevation_1"
+        app:titleBarBackground="@color/white"
+        app:titleBarLeftImage="@mipmap/back_icon"
+        app:titleBarTitle="钱包记录" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_coin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_txt"
+        android:elevation="@dimen/elevation_1"
+        app:srlEnableLoadmore="false">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_f5f5fb">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                app:layout_behavior=".ui.custom.CustomBehavior">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/collapsingToolbarLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="?actionBarSize"
+                    app:expandedTitleGravity="bottom"
+                    app:expandedTitleMarginBottom="16dp"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_top"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/title_tb"
+                            android:background="@color/white"
+                            android:elevation="@dimen/elevation_1">
+
+                            <ImageView
+                                android:id="@+id/iv_logo"
+                                android:layout_width="@dimen/dp40"
+                                android:layout_height="@dimen/dp40"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginVertical="@dimen/dp8" />
+
+                            <LinearLayout
+                                android:id="@+id/ll_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/iv_logo"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/tv_amount"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dp35"
+                                    android:layout_marginHorizontal="@dimen/dp32"
+                                    android:autoSizeMaxTextSize="@dimen/sp24"
+                                    android:autoSizeMinTextSize="@dimen/sp16"
+                                    android:gravity="center"
+                                    android:enabled="false"
+                                    android:text="0"
+                                    android:textColor="@color/txt_333333"
+                                    app:autoSizeStepGranularity="1dp"
+                                    app:autoSizeTextType="uniform" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_rmb"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_above="@+id/v_line"
+                                android:layout_below="@+id/ll_price"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="@dimen/dp16"
+                                android:textColor="@color/txt_8f95a9"
+                                android:textSize="@dimen/sp13" />
+
+                            <TextView
+                                android:id="@+id/tv_address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_rmb"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginHorizontal="@dimen/dp36"
+                                android:layout_marginBottom="@dimen/dp16"
+                                android:background="@drawable/layout_shape_bg"
+                                android:drawableRight="@mipmap/copy_icon"
+                                android:drawablePadding="@dimen/dp12"
+                                android:elevation="0.1dp"
+                                android:ellipsize="middle"
+                                android:padding="@dimen/dp8"
+                                android:singleLine="true"
+                                android:textColor="@color/txt_333333"
+                                android:textSize="@dimen/sp14" />
+
+                            <LinearLayout
+                                android:id="@+id/ll_bottom"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_address"
+                                android:orientation="horizontal"
+                                android:paddingHorizontal="@dimen/dp24"
+                                android:paddingBottom="@dimen/dp16">
+
+                                <RelativeLayout
+                                    android:id="@+id/btn_send"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dp48"
+                                    android:layout_marginRight="@dimen/dp24"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/btn_5f8def_selector"
+                                    android:elevation="@dimen/elevation_1">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:drawableRight="@mipmap/info_s_icon"
+                                        android:drawablePadding="@dimen/dp12"
+                                        android:text="@string/coininfo_send"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/sp15" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/btn_receive"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dp48"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/btn_orange_selector"
+                                    android:elevation="@dimen/elevation_1">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:drawableRight="@mipmap/info_r_icon"
+                                        android:drawablePadding="@dimen/dp12"
+                                        android:text="@string/coininfo_receive"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/sp15" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp48"
+                            android:layout_below="@+id/rl_top"
+                            android:layout_marginTop="@dimen/dp10"
+                            android:background="@color/white"
+                            android:elevation="@dimen/elevation_1"
+                            android:paddingVertical="@dimen/dp12"
+                            android:paddingLeft="@dimen/dp12"
+                            android:text="@string/coininfo_txt"
+                            android:textColor="@color/txt_333333"
+                            android:textSize="@dimen/dp16" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            android:background="@color/white">
+
+                            <com.androidkun.xtablayout.XTabLayout
+                                android:id="@+id/xTablayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/line_v"
+                                android:layout_toLeftOf="@+id/tv_wen"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:xTabDividerColor="@color/white"
+                                app:xTabDividerWidthWidthText="true"
+                                app:xTabIndicatorColor="@color/title_bg_5f8def"
+                                app:xTabIndicatorHeight="@dimen/dp3"
+                                app:xTabIndicatorRoundX="@dimen/dp2"
+                                app:xTabIndicatorRoundY="@dimen/dp2"
+                                app:xTabMode="scrollable"
+                                app:xTabSelectedTextColor="@color/tx_364964"
+                                app:xTabSelectedTextSize="@dimen/sp15"
+                                app:xTabTextColor="@color/txt_8f95a9"
+                                app:xTabTextSize="@dimen/sp15" />
+
+                            <com.weiyu.baselib.widget.ThumbnailView
+                                android:id="@+id/tv_wen"
+                                android:layout_width="@dimen/dp36"
+                                android:layout_height="@dimen/dp36"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginHorizontal="@dimen/dp4"
+                                android:scaleType="center"
+                                android:src="@mipmap/wenhao_icon" />
+
+                            <View
+                                android:id="@+id/line_v"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp1"
+                                android:background="@color/line_dddddd" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </android.support.design.widget.CollapsingToolbarLayout>
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </android.support.design.widget.CoordinatorLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

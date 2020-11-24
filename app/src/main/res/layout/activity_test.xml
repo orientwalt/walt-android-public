@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.weiyu.baselib.widget.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleBarBackground="@color/white"
+        app:titleBarLeftImage="@mipmap/close_icon"
+        app:titleBarTitle="@string/test_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tb_title">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp16"
+            android:layout_marginVertical="@dimen/dp16"
+            android:drawableLeft="@mipmap/tishi"
+            android:drawablePadding="@dimen/dp8"
+            android:text="@string/test_hint"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="@dimen/dp16" />
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_import"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_hint"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/title_bg_5f8def"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/title_bg_5f8def"
+        app:tabTextColor="@color/txt_333333" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0.5"
+        android:layout_below="@+id/tl_import"
+        android:background="@color/title_bg_5f8def" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_finish"
+        android:layout_below="@+id/tl_import" />
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp32"
+        android:text="@string/test_splash_tab_hint"
+        android:textColor="@color/btn_bg_5f8def" />
+
+    <TextView
+        android:id="@+id/btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_hint"
+        android:layout_marginHorizontal="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp8"
+        android:background="@drawable/btn_5f8def_selector"
+        android:elevation="@dimen/dp2"
+        android:gravity="center"
+        android:paddingVertical="@dimen/dp12"
+        android:text="@string/test_finish"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+</RelativeLayout>

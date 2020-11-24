@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#317CFB</color>
+    <color name="colorPrimaryDark">#317CFB</color>
+    <color name="colorAccent">#317CFB</color>
+
+    <color name="alpha_10_white">#1AFFFFFF</color>
+    <color name="alpha_45_white">#73FFFFFF</color>
+    <color name="alpha_50_white">#80FFFFFF</color>
+    <color name="alpha_75_white">#BFFFFFFF</color>
+    <color name="alpha_80_white">#CCFFFFFF</color>
+    <color name="alpha_90_white">#E6FFFFFF</color>
+    <color name="alpha_05_black">#0D000000</color>
+    <color name="alpha_10_black">#1A000000</color>
+    <color name="alpha_45_black">#73000000</color>
+    <color name="alpha_50_black">#80000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg_fff7faff">#fff7faff</color>
+    <color name="transparent">#00000000</color>
+    <color name="main_text">#747474</color>
+    <color name="btn_bg">#5f8def</color>
+    <color name="btn_bg_50">#805f8def</color>
+    <color name="dialog_line_bg">#EFEFEF</color>
+    <color name="btn_bg_fc5555">#fc5555</color>
+    <color name="txt_333333">#364964</color>
+    <color name="txt_46607f">#46607F</color>
+    <color name="txt_8f95a9">#8F95A9</color>
+    <color name="txt_ff0000">#FF0000</color>
+    <color name="green">@android:color/holo_green_dark</color>
+    <color name="red">#FF0000</color>
+</resources>

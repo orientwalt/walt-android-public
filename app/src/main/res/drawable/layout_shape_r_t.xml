@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <corners
+                android:bottomLeftRadius="@dimen/dp8"
+                android:bottomRightRadius="@dimen/dp8"
+                android:topLeftRadius="@dimen/dp8"
+                android:topRightRadius="@dimen/dp8" />
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+    <item android:id="@+id/shape_id">
+        <!-- 正三角 -->
+        <rotate
+            android:fromDegrees="45"
+            android:toDegrees="45"
+            android:pivotX="260%"
+            android:pivotY="100%">
+            <shape android:shape="rectangle">
+                <solid android:color="#F5F5FA" />
+
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

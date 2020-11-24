@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp72"
+        android:layout_marginHorizontal="@dimen/dp12"
+        android:layout_marginVertical="@dimen/dp8"
+        android:background="@drawable/gradient_blue"
+        android:elevation="@dimen/elevation_1">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp16"
+            android:src="@mipmap/walt_list_item_icon" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp12"
+            android:layout_marginRight="@dimen/dp8"
+            android:layout_toLeftOf="@+id/tv_go"
+            android:layout_toRightOf="@+id/icon">
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp14" />
+
+            <LinearLayout
+                android:id="@+id/ll_addr"
+                android:visibility="visible"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_coin_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp12"
+                    />
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="middle"
+                    android:textColor="@color/white"
+                    android:maxWidth="@dimen/dp120"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sp12" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.weiyu.baselib.widget.ThumbnailView
+            android:id="@+id/tv_go"
+            android:layout_width="@dimen/dp48"
+            android:layout_height="@dimen/dp48"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/more_icon" />
+    </RelativeLayout>
+</RelativeLayout>

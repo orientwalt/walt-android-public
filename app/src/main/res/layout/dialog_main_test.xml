@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_first"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/s_dialog_top">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/test_splash_title"
+            android:textColor="@color/btn_bg_5f8def"
+            android:textSize="@dimen/dp16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_top"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/s_dialog_b">
+
+        <TextView
+            android:id="@+id/tv_hin2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp8"
+            android:background="@mipmap/text_bg"
+            android:padding="@dimen/dp16"
+            android:text="@string/test_splash_hint"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="@dimen/dp13" />
+
+        <TextView
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_hin2"
+            android:layout_alignLeft="@+id/tv_hin2"
+            android:layout_alignRight="@+id/tv_hin2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="@dimen/dp16"
+            android:layout_marginTop="-12dp"
+            android:layout_marginBottom="@dimen/dp8"
+            android:background="@drawable/btn_white_shape2"
+            android:elevation="@dimen/dp2"
+            android:gravity="center"
+            android:paddingVertical="@dimen/dp12"
+            android:text="@string/test_splash_btn"
+            android:textColor="@color/btn_bg_5f8def" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/right_layout"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp52"
+        android:layout_alignTop="@+id/rl_top"
+        android:layout_alignRight="@+id/rl_top"
+        android:layout_alignBottom="@+id/rl_top"
+        android:background="@drawable/common_tab_bg">
+
+        <TextView
+            android:id="@+id/left_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/close_icon" />
+    </RelativeLayout>
+</RelativeLayout>

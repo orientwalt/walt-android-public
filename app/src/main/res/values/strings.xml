@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Walt</string>
+    <!--splash-->
+    <string name="splash_btn_create">Create a wallet</string>
+    <string name="splash_btn_import">Import wallet</string>
+    <!--main-->
+    <string name="main_tab_item1">Hot Wallet</string>   
+    <string name="main_tab_item2">my</string>
+
+    <string name="main_tab_item0">Assets</string>
+    <string name="main_tab_item7">Find</string>
+    <!--myfragment-->
+    <string name="main_fragment_item_address">Address Book</string>
+    <string name="main_fragment_item_setting">System Settings</string>   
+    <string name="main_fragment_item_help">Help Center</string>  
+    <string name="main_fragment_item_about">About us</string>
+    <string name="main_fragment_hint2">Multi-chain wallet, multi-currency support \n large assets recommend the use of cold wallet management</string>
+    <!--indexfragment-->
+    <string name="index_price">total assets</string>   
+    <string name="index_add_title">Add a wallet</string>   
+    <string name="index_create_hint">Create a new wallet, and you can back up by exporting the private key, mnemonic, and keystore</string>
+    <string name="index_import_hint">Import through existing wallet mnemonics or private keys</string>
+    <string name="index_hint1">The wallet has not yet backed up the mnemonic. In order to prevent the loss of assets caused by forgetting the security password, deleting the APP or losing the mobile phone, please backup the mnemonic in time.</string>
+    <string name="index_hint_title">Safety alert</string>
+
+    <!--import-->  
+    <string name="import_keystore_hint">keystore text content</string>  
+    <string name="import_key_hint">Cleartext private key</string>   
+    <string name="import_ing">Importing…</string>  
+    <string name="import_keystore_txt">directly copy and paste the contents of the Walter Oriental official wallet keystore file to the input box. Or by generating a QR code of the Keystore content, scanning the entry</string>
+    <string name="import_type">Importing Keystore type does not match the selected currency</string>
+    <string name="import_keystore_err">keystore file error</string>   
+    <string name="import_txt_what1">What is a keystore</string>    
+    <string name="import_txt_what3">What is a mnemonic</string>    
+    <string name="what_words">What is a mnemonic?</string>  
+    <string name="what_privacy">What is a private key?</string>   
+    <string name="what_key">What is a keystore?</string>    
+    <string name="import_words_toast">Mnemonic invalid</string> 
+    <string name="import_words_toast2">Please enter twelve mnemonic words</string>
+    <string name="import_key_toast">Please enter the correct private key </string>  
+    <array name="import_tab">       
+        <item>mnemonic</item>      
+        <item>Keystore file</item>       
+        <item>private key</item>    
+    </array>
+    <!--create-->  
+    <string name="import_txt_hint">The password is used to encrypt the private key, the strength is very important!\n wallet will not store the password, and can not help you find it, please remember! </string>
+       
+    <string name="import_input_name_hint">Enter the wallet name</string>   
+    <string name="import_input_pwd_hint">Enter your password</string>   
+    <string name="import_input_pwd_hint2">Confirm your password</string>  
+    <string name="import_txt_agree">I have read and agree</string>  
+    <string name="import_txt_privacy">Services and Privacy Policy</string>   
+    <string name="import_dialog_title">backup wallet</string>  
+    <string name="create_dialog_txt">The blockchain wallet is different from the traditional website account, which is a cryptographic-based decentralized account system. \n\nYou must keep your wallet\'s private key and transaction password yourself, and any accidents will result in the loss of assets. \n\nWe recommend doing a double backup first, then typing in a small amount of test, and then starting to use it </string>
+    <string name="create_dialog_words">backup mnemonic</string> 
+    <string name="create_dialog_words_hint">When you lose your wallet or forget your password, you can help restore it.</string>
+    <string name="create_dialog_key">Backup keystore file </string>
+    <string name="create_dialog_key_hint">official wallet format, transaction password protected private key file</string>
+    <string name="create_dialog_btn">Back up now</string>
+
+    <!--about-->
+    <string name="about_version">current version %s</string>   
+    <string name="about_txt">Digital Ecological Wisdom Home Based on Block Chain</string>   
+    <string name="about_server">service agreement</string>   
+    <string name="about_privacy">Privacy Policy</string>   
+    <string name="about_log">version log</string>    
+    <string name="about_check">detect new version</string>   
+    <!--help-->   
+    <string name="help_title">Help Center</string>
+    <!--setting-->   
+    <string name="setting_language">Language</string>
+    <string name="setting_jiedian">Node setup</string>
+    <string name="setting_main">Main network</string>
+    <string name="setting_test">Test network</string>
+    <!--language-->   
+    <string name="language_en">English</string>  
+    <string name="language_zh">Simplified Chinese</string>
+    <!--words--> 
+    <string name="words_title">Confirm mnemonic</string> 
+    <string name="words_sure">Confirm your wallet mnemonic </string>  
+    <string name="words_sure_hint">Please click on the mnemonic in order to confirm that your backup mnemonic is correct.</string>
+      
+    <string name="words_sure_finish">finish</string> 
+    <string name="words_sure_finish1">The mnemonic confirms the correct</string>  
+    <string name="words_sure_finish2">mnemonic confirmation error</string>
+    <!--exportwords-->   
+    <string name="exportwords_title">Backup mnemonics</string> 
+    <string name="exportwords_sure_hint">The mnemonic is used to restore the wallet or reset the wallet password, copy it accurately onto paper, and store it in a safe place that only you know. </string>
+    <string name="exportwords_next">Next </string>  
+    <!--exportkey-->   
+    <string name="exportkey_title">export keystore</string>  
+    <string name="exportkey_sure">Save offline</string>  
+    <string name="exportkey_sure_hint">Please copy and paste the keystore file to a safe, offline place to save. Don\'t save to mailbox notepad, web disk, chat tool, etc., very dangerous </string>
+    <string name="exportkey_sure_hint_p">Do not save it to mailbox, notebook, Internet disk, chat tools, etc. It is very dangerous.</string>
+    <string name="exportkey_sure1">Do not use network transmission</string>  
+    <string name="exportkey_sure_hint1">Do not transfer the keystore file through the network tool. Once it is acquired by the hacker, it will cause irreparable asset loss. It is recommended that offline devices be transmitted by QR code. </string>
+    <string name="exportkey_sure_hint1_p">Do not transmit through network tools, once acquired by hackers, it will cause irreparable loss of assets. It is suggested that offline devices should be transmitted by two-dimensional code.</string>
+     
+    <string name="exportkey_sure2"> password safe save </string>  
+    <string name="exportkey_sure_hint2">For online save, it is recommended to save the keystore with a password security software with a higher security level. </string>
+    <string name="exportkey_sure_hint2_p">It is recommended to use password management tools to manage.</string>
+    <string name="exportkey_sure3">for direct scanning only</string> 
+    <string name="exportkey_sure_hint3">The QR code prohibits saving, screenshots, and taking photos. It is only for users to scan directly in a secure environment to facilitate the import of wallets. </string>
+      
+    <string name="exportkey_sure4">Use in a secure environment</string>
+    <string name="exportkey_sure_hint4">Please use it if you are surrounded by no one and no camera. Once the QR code is acquired by others, it will cause irreparable loss of assets. </string>
+      
+    <string name="exportkey_next">copy keystore</string>  
+    <string name="exportkey_next2">Copy the private key</string>
+    <array name="export_tab">        
+        <item>KetStore file</item>        
+        <item>QR code</item>   
+    </array>
+    <array name="export_tab1">        
+        <item>private key</item>        
+        <item>QR code</item>   
+    </array>
+    <!--create-->   
+    <string name="create_language">Language choice</string>
+    <string name="create_toast_create">Creating a wallet…</string>  
+    <string name="create_toast_remark">Please enter the wallet name </string>  
+    <string name="create_toast_input_key">Please enter the private key </string> 
+    <string name="create_toast_input_keystore">Please enter keystore</string>  
+    <string name="create_toast_hasremark">wallet name already exists</string> 
+    <string name="create_toast_pwd">Please enter the password </string> 
+    <string name="create_toast_agree">Please read and agree to the "Service and Privacy Policy" </string>
+     
+    <string name="create_toast_no_equals">two password inconsistencies</string> 
+    <string name="create_htdf">Create USDP wallet at the same time</string>
+    <string name="create_pwd_hint">8–16 digits and letters.</string>
+    <!--walletlist-->
+    <string name="walletlist_title">wallet management</string>
+    <!--receive-->   
+    <string name="receive_title">receipt code</string> 
+    <string name="receive_copy_toast">has been copied to the clipboard</string>
+    <string name="receive_hint">This address only accepts %s assets, please do not transfer to other currency assets, otherwise the assets will not be recovered.</string>
+    <!--send-->
+    <string name="send_price">balance:</string>
+    <string name="send_err_pwd">Password error</string> 
+    <string name="send_input_pwd">Please enter the password</string>  
+    <string name="send_dialog_item1">order information</string>  
+    <string name="send_dialog_item2">transfer address</string> 
+    <string name="send_dialog_item3">export address</string> 
+    <string name="send_dialog_item4">amount</string>
+    <string name="send_dialog_btn">OK</string>
+    <string name="send_fee_hint">The higher the handling fee, the faster the transfer speed</string>
+    <string name="send_fee_hint2">Note: ETH transfers need to be deducted part of the ETH for a single contract execution. The success of a transaction is determined by the number of times the program executes the contract. The current handling fee is the maximum acceptable handling fee. If the transaction fails, the fee for the number of executed contracts</string>
+    <string name="send_dialog_btn2">Confirm</string>
+    <string name="send_dialog_title">payment details</string> 
+    <string name="send_dialog_title2">confirm password</string> 
+    <string name="send_dialog_pwd_hint">Enter the wallet password</string>
+    <string name="send_not_to_hint">Please enter the transfer address</string>
+    <string name="send_not_amount_hint">Please enter the transfer amount</string> 
+    <string name="send_not_amount_hint2">Transfer amount must be greater than 0</string>   
+    <string name="send_amout_hint">Too few transfers to provide services</string>
+    <string name="send_amout_not_balance1">The ETH balance is insufficient to carry out contract transfer</string>
+    <string name="send_amout_not_balance">The balance is inadequate and cannot be transferred.</string>
+    <string name="send_amout_not_balance2">The HTDF balance is insufficient to carry out contract transfer</string>
+    <string name="send_to_e_from_hint">Can\'t transfer money to oneself</string>
+    <string name="send_to_hint">payee wallet address</string>
+    <string name="send_amount">transfer amount</string>
+    <string name="send_type">transfer </string>
+    <string name="send_address_error">Invalid address</string>
+    <string name="send_remark_hint">Remarks </string>
+    <string name="send_commit">is sending a transaction…</string>
+    <string name="send_fee_txt">Miner cost</string>
+    <string name="send_not_data">No data available for the time being</string>
+    <!--walletinfo-->
+    <string name="walletinfo_title">Wallet information</string>
+    <string name="walletinfo_item3">Export private key</string>
+    <string name="walletinfo_item4">export keystore</string>
+    <string name="walletinfo_item5">Export mnemonic</string>
+    <string name="walletinfo_btn">delete wallet</string>
+    <string name="walletinfo_dialog_name_title">wallet name</string>
+    <string name="coin_dialog_close">Cancel</string>
+    <!--updatepwd-->
+    <string name="updatepwd_new_pwd_hint">new password</string>
+    <string name="updatepwd_new_pwd_hint2">Enter new password again</string>
+    <!--walletfragment-->
+    <!--testfragment-->
+    <string name="test_solution">Correct answer: %s</string>
+    <array name="test1">
+        <item>, the following will not lead to the theft of your wallet:</item>
+        <item>. Others know your wallet address</item>
+        <item>. Others know your Keystore and unlock your Keystore password</item>
+        <item>. Others know your plaintext private key</item>
+        <item>. Others know your mnemonic</item>
+    </array>
+
+    <array name="test2">
+        <item>, the following statement is correct:</item>
+        <item>.Be sure to make a wallet backup before upgrading the mobile phone system and APP
+            version
+        </item>
+        <item>. Uninstalling upgrades requires backup of the wallet, and coverage upgrades do not
+            require backup
+        </item>
+        <item>. After the wallet is lost, or the backup information is lost, contact customer
+            service staff to help retrieve it
+        </item>
+        <item>. Backup information is stored on the wallet server, so don\'t worry</item>
+    </array>
+
+    <array name="test3">
+        <item>, which of the following backup methods is correct:</item>
+        <item>. Copy backup help words, ensure that the order of transcription is correct, clear
+            copy, use spaces to separate each word, and keep the transcripts of the copy properly,
+            such as in the safe
+        </item>
+        <item>. Only backup mnemonics on mobile devices</item>
+        <item>. Only backup Keystore, no backup keystore password</item>
+        <item>. Back up only mnemonics on your mobile hard drive</item>
+    </array>
+
+    <array name="test4">
+        <item>, when you use the wallet to transfer money, find yourself turning the wrong address,
+            the following is correct?
+        </item>
+        <item>. Because the blockchain has irreversible characteristics. So there is no way to
+            cancel the transaction, and the wallet cannot withdraw the transaction
+        </item>
+        <item>. Contact the official customer service staff at the first time to request
+            cancellation of the transactiong
+        </item>
+        <item>. Contact the official customer service staff for the first time and request to
+            withdraw the successful transaction that has been sent
+        </item>
+        <item>. Contact the official customer service staff at the first time to request to find out
+            who the wrong transfer address is and contact the other party
+        </item>
+    </array>
+
+    <array name="test5">
+        <item>, if you create a new wallet, what do you need to do first?</item>
+        <item>. Back up your wallet immediately, including mnemonics and private keys</item>
+        <item>. Transfer transaction now</item>
+        <item>. Immediately copy the wallet address and remember the wallet password</item>
+        <item>. No special operations, just put it in the phone</item>
+    </array>
+    <array name="test6">
+        <item>, If there is no backup wallet, which of the following statements is correct:</item>
+        <item>. This software is a decentralized wallet. If the private key is forgotten, it will
+            lose all the assets in the wallet and will never be retrieved</item> 
+        <item>. Can be retrieved via wallet address and transaction password</item>  
+        <item>. The wallet will be retrieved by itself</item>  
+        <item>. Can seek help from customer service staff</item>
+    </array>
+
+    <array name="test7">   
+        <item>, when you use the wallet, you find that there is a transfer record that is not your
+            own operation. The following is correct:</item>   
+        <item>. Realize that your private key may be leaked, stop using the wallet, immediately
+            generate a new wallet, make a backup of the wallet, quickly transfer your Token to the
+            new wallet, and then contact customer service staff</item>   
+        <item>. Ask the customer service staff to freeze the account immediately</item>    
+        <item>. Contact customer service staff at the first time</item>   
+        <item>. Don\'t bother</item>
+    </array>
+    <string name="test_title">Security Review</string>
+    <string name="test_hint">Complete security evaluation to ensure asset security</string>
+    <string name="test_splash_hint">To prevent the loss and theft of your digital assets, you need to understand the basics of the blockchain decentralized wallet and complete the security evaluation before using the decentralized application. After the security evaluation, the evaluation content will not pop up again</string>
+    <string name="test_splash_title">New User Security Review</string>
+    <string name="test_splash_btn">Start evaluation</string>
+    <string name="test_splash_tab_hint">Please swipe left and right to switch to the next question</string>
+    <string name="test_finish">Complete evaluation</string>
+    <string name="test_finish2">%s question answer error</string>
+    <string name="test_finish4">Congratulations to your answer</string>
+    <string name="test_finish3">Please re-review</string>
+    <string name="test_finish5">Get started</string>
+    <!--coininfo-->
+    <string name="coininfo_txt">Recent transaction history</string>
+    <string name="coininfo_send">transfer</string>
+    <string name="coininfo_receive">receipt</string>
+    <string name="coininfo_no_balance">no change can be transferred out</string>
+    <string name="coininfo_no_balance2">Insufficient BTC fee</string>
+    <string name="coininfo_success">success</string>
+    <string name="coininfo_fail">failure</string>
+    <!--success-->
+    <string name="success_title">transaction success</string>
+    <string name="success_title2">The transaction is going on\n please wait</string>
+    <string name="success_title3">transaction failed</string>
+    <string name="success_item1">Payer</string>
+    <string name="success_item2">receivers </string>
+    <string name="success_item3">transaction number </string>
+    <string name="success_item4">block</string>
+    <string name="success_item">transaction time </string>
+    <string name="success_item6">Remarks</string>
+    <string name="str_sure">OK</string>
+    <string name="exit_app">Click again to exit the application</string>
+
+    <array name="pwd_type">    
+        <item>weak</item>    
+        <item>in</item> 
+        <item>strong</item>
+    </array>
+    <!--scan-->
+    <string name="scan_result_title">Scanning results</string>
+    <string name="scan_title2">Scan QR code</string>
+    <!--msg-->
+    <string name="msg_item_msg">Notification: </string>
+    <string name="msg_item_to">Recipient: </string>
+
+
+    <array name="what_list">
+        <item>What is a private key?</item>
+        <item>What is an auxiliary word?</item>
+        <item>What is Keystore?</item>
+        <item>What is the miner\'s fee?</item>
+        <item>What is a digital token?</item>
+        <item>What is the content of the message center?</item>
+        <item>Import wallet?</item>
+        <item>Transfer and collection.</item>
+        <item>Transfer overtime.</item>
+        <item>What about incorrect transfer address?</item>
+        <item>How to prevent wallet loss.</item>
+        <item>What if you find that you are not authorized to transfer transactions?</item>
+        <item>Manage digital tokens.</item>
+        <item>transaction record.</item>
+        <item>How to modify the wallet password?</item>
+        <item>Walt open source code.</item>
+        <item>What is the mnemonic path?</item>
+        <item>BSV address update instructions.</item>
+    </array>
+
+    <array name="what_list_content">       
+        <item>consists of 256-bit random characters and is the core of the user\'s own and use of
+            digital tokens.</item>       
+        <item>conforms to the blockchain BIP39 industry standard and consists of 12 (or 15/18/21/24)
+            ordered words generated by a random algorithm. It is an easy-to-record expression of the
+            private key, which is convenient for users to backup and keep.</item>       
+        <item>is a file format in which the private key or mnemonic is encrypted by the user-set
+            wallet password. It is stored only on your mobile device and will not be synchronized to
+            the company\'s server.</item>       
+        <item>On a public chain, anyone can read and write data. Reading data is free, but writing
+            data to the public chain costs a certain amount of money, which helps prevent garbage
+            content and protect its security by paying for it. Any node on the network (each
+            connection device that contains a copy of the account is called a node) can participate
+            in a way called mining to protect the network. Because mining requires computing power
+            and electricity, the miners need to be paid for their services, which is also the origin
+            of the miners\'fees.
+        </item>
+               
+        <item>refers to the types of digital tokens currently supported by Walt, including but not
+            limited to BTC, ETH, USDP, HTDF, etc.</item>      
+        <item>refers to the inbox where users can receive information or notifications from the
+            company.</item>      
+        <item>For digital tokens supported by Walt, you can use Walt to generate a new wallet or
+            import a compatible wallet generated by other wallet tools of the relevant blockchain
+            system.</item>        
+        <item>You can use Walt\'s transfer and collection functions to manage digital
+            tokens, that is, use the private key for electronic signatures and modify the ledger of
+            the relevant blockchain. Transfer means that the payer uses the payee\'s domain name or
+            blockchain address for the transfer operation, which involves a valid record of the
+            transaction in the distributed ledger of the relevant blockchain system (rather than
+            actually on Walt) Deliver or transfer digital tokens).</item>       
+        <item>Transfer This error may be caused by blockchain congestion. Transfer timeout does not
+            mean transfer failure. For more information on this transaction, please visit Etherscan
+            https://etherscan.io/.</item>        
+        <item>First confirm whether the payment address filled in the transfer is the exchange
+            address,
+            personal address or smart contract address. Because all transfer transactions happen on
+            the blockchain,
+            once the transaction is completed, there is no way to modify the blockchain data to
+            withdraw or cancel the transaction,
+            and the token can only be transferred back by the recipient. \n
+                        If you fill in the address of the exchange, then all the tokens you
+            transferred have been transferred to the exchange\'s wallet address, please contact the
+            exchange customer service, let them transfer your misdirected token back to your wallet.
+            \n
+                        If you are filling in a personal address, you can contact the other party to
+            return the token. If you can\'t get the personal information of the holder of the
+            currency address, there is no way to transfer the token back. \n
+                        If you are filling out a smart contract address, please contact the contract
+            developer to return your token. \n
+                        It is recommended to carefully confirm the correctness of the receipt
+            address and avoid asset loss before initiating the transfer transaction.
+        </item>
+        <item>Wallet loss has the following four cases: \n
+                        1. When the user deletes the wallet, there is no backup wallet. \n
+                        We recommend that users back up their wallets immediately after creating
+            their wallets, using both dual backup and multiple backup strategies. Double backup
+            refers to keystore backup and mnemonic backup, multiple backup refers to backup of
+            keystore
+                        After the mnemonic and the mnemonic, verify that the backup is correct,
+            repeat the verification, and confirm that it is correct. \n
+                        2. The user has forgotten the Keystore password\n
+                        We recommend that users encrypt the Keystore with a stronger password. This
+            password is preferably a random, non-common password generated by the user. \n
+                        3. Lost private key\n
+                        The private key here includes mnemonic, keystore and plaintext private key.
+            Some users do not verify after copying the mnemonic, or they are too scribbled, which
+            makes it difficult to identify later.
+                        These will lead to the inability to find your own wallet. Therefore, we must
+            be careful when backing up the wallet. When you keep your wallet in the future, you
+            should be good at using some secure management tools to ensure that you can find the
+            private key at any time. \n
+                        4. Back up the wrong wallet\n
+                        Backing up the wrong wallet means that the user has two wallets in Walt, for
+            example, one is the A wallet and the other is the B wallet. When the user wants to back
+            up the A wallet, it is backed up incorrectly.
+                        The private key of the wallet. Therefore, we recommend that after you back
+            up your wallet, be sure to import the backup private key into your wallet to verify that
+            the backup is correct.</item>       
+        <item>First, realize that your private key may be leaked, replace your wallet immediately,
+            and make a wallet backup. Then, quickly transfer the assets of your wallet to the new
+            wallet. And check out the situation where you may reveal your private key</item>        
+        <item>You can add, store or remove digital tokens (except ETH and BTC) supported by Walt
+            from the Walt operator interface.</item>        
+        <item>We will copy all or part of your transaction history through the blockchain system.
+            However, the user should take the latest transaction record of the blockchain system as
+            the standard.</item>       
+        <item>In the decentralized wallet, all users\' authentication content, such as transaction
+            password, private key, and mnemonic, are stored locally on the user\'s mobile phone and
+            are not stored in the centralized server. All users forget the password. Third party
+            agencies to reset.
+        </item>
+        <item>refers to some of the Walt software code that the company publicly announces open
+            source, allowing developers to use (including secondary development) the part of the
+            open source code in compliance with the relevant open source agreement and the notice of
+            the company.</item> 
+        <item>Mnemonic words need to be used in conjunction with paths, and the same mnemonic words
+            can generate different addresses in conjunction with different paths. Walt\'s HTDF
+            default path is m\'44\'346\'0\'0, and USDP\'s default path is m\'44\'345\'0\'0. If you
+            import mnemonics and want to change the path, a new wallet address will be generated. Be
+            sure to remember your own path. If you set a custom path and then forget it when you
+            import mnemonics, you may lose your wallet.</item> 
+        <item>The 3.1.4 version starts using the standard BSV path m\'44\'346\'0\'0. The
+            path of the old version is the same as that of the BCH. To recover the BSV assets of the
+            old version of the asset, please use the BCH private key import to find.
+        </item>
+    </array>
+    <string name="edittext_input_type">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghigjklmnopqrstuvwxyz0123456789</string>
+    <string name="coin_type_hint">Please select the main chain</string>
+    <string name="coin_type_title">Choose the Main Chain</string>
+    <array name="sp_language">
+        <item>Chinese Auxiliaries</item>
+        <item>English Auxiliaries</item>
+    </array>
+    <string name="add_addr_title">Add Address Book</string>
+    <string name="add_addr_name">Name</string>
+    <string name="add_addr_address">address</string>
+    <string name="add_addr_addr_type">Choose address type</string>
+    <string name="add_addr_input">Input valid address</string>
+    <string name="add_addr_remarck">Description (optional)</string>
+    <string name="add_addr_name_hint">Please enter a name</string>
+    <string name="add_addr_addr_hint">Please enter your address</string>
+    <string name="address_type_title">Address type</string>
+    <string name="addr_not_data">You don\'t have an address yet, add it</string>
+    <string name="addr_list_title">Address Book</string>
+    <string name="save">save</string>
+    <string name="type_title1">Language Choice</string>
+    <string name="type_title3">path choice</string>
+    <array name="path_type">
+        <item>default</item>
+        <item>Old version((m\'44\'145\'0\'0))</item>
+    </array>
+
+    <string name="add_token_title">Currency management</string>
+    <string name="assets_wen">Stable currency</string>
+    <array name="add_asset_tab">
+        <item>Main</item>
+        <item>Stable</item>
+        <item>ERC-20</item>
+        <item>HRC-20</item>
+    </array>
+    <array name="add_asset_tab2">
+        <item>Main</item>
+        <item>Stable</item>
+        <item>ERC-20</item>
+    </array>
+    <string name="add_token_hint">Enter token name or token contract address</string>
+    <string name="add_token_custom_hint">Token Contract Address</string>
+    <string name="add_token_custom_hint2">Token symbol</string>
+    <string name="add_token_custom_hint3">Accurate decimal point</string>
+    <string name="add_token_custom_hint6">The contract address is invalid</string>
+    <string name="login_forget_set_pwd">Set new password</string>
+    <string name="recharge_walt">Select wallet </string>    
+    <string name="recharge_hint_no_price">Insufficient balance </string>    
+    <string name="delete">delete </string>
+    <string name="fee_recommend">recommend:</string>  
+    <string name="withdraw_price_balance">Available balance </string>    
+    <string name="buy_plan_item10">mine pool plan agreement </string>    
+    <string name="buy_plan_item11">Huate Wallet Mine Pool Program User Agreement</string>    
+    <string name="buy_plan_item12"> 1, participation method and quota The mine pool plan only supports USDP/USDT point-to-point transfer to the specified address. The actual transfer amount, please refer to the page prompt. Reminder: Transfer to the designated official wallet address, if the address is wrong, the user is responsible for the loss. \n
+        2, the income rules T day transferred to participate in mining, one year after T+1 day to obtain double market value of HTDF. Example: On August 28, 2019, the user participated in mining with 10,000 USDP/USDT ($100 USD), and on August 29, 2020, the HTDF with double market value ($20,000) was obtained. \n
+        3. Participation in mining This product is limited to users who have reached the age of 18 and have civil capacity. Before participating, they must complete registration and real-name certification in Walter Wallet. The mining pool is planned to be based on 1000 USDP/USDT (minimum 1000 pieces). The details of the actual activity page are subject to the details. This activity is irrevocable after its participation. \n
+        4. Start calculating the income. The income is calculated on the day after the successful participation in the mining pool plan. If the participation fails, the participating USDP/USDT will be returned to the wallet address on the same day. \n
+        5, due settlement with a natural year as the settlement cycle, that is, T day transfer, one year after T+1 settlement. HTDF settles at 9:00 am on the Hetbi Exchange on the settlement date. The settlement completion user can transfer the acquired HTDF to the Hetbi exchange and continue to participate in the mining activities. \n
+        6. Withdrawal from participation in the mining pool During the planning period, if the user proposes a mandatory withdrawal plan without expiration, the service agreement refers to the automatic loss of legal effect, and the user must bear the penalty of 20% of the subscribed assets. This agreement is terminated. </string>
+    <string name="my_plan_info_item3">payment address </string>   
+    <string name="my_plan_info_item4">receipt address </string>   
+    <string name="back_licai">Return to "My Finance"</string>
+    <string name="ad_txt">Announcement on HET, USDP, BEI old chain transfer service closure and replacement of HRC20 type new currency</string>
+    <string name="str_confirm">Block confirmation</string>
+    <string name="str_go_block">Go to the block browser to view details</string>
+    <string name="str_title_block">Block browser</string>
+    <string name="send_fail">Broadcast failed</string>
+    <string name="send_fee">Transfer fee:(%s)</string>
+    <string name="mortgage_title">Commission</string>
+    <string name="commission_hint">Please enter the number of HTDF</string>
+    <string name="commission_hint6">The amount of commissioned HTDF must be greater than 0</string>
+    <string name="commission_hint7">Please select a delegation node</string>
+    <string name="commission_btn">extract</string>
+    <string name="htdf_memo1">Diversified mining commission</string>
+    <string name="htdf_memo2">Diversified mining revenue extraction</string>
+    <string name="htdf_memo3">Diversified mining commission redemption</string>
+    <string name="htdf_mortgage">Diversified mining</string>
+    <array name="sort">
+        <item>Commission</item>
+        <item>Delegates</item>
+        <item>Estimated annualized income</item>
+    </array>
+    <string name="commission_node_hint1">My commission</string>
+    <string name="commission_node_hint2">Current earnings(HTDF)</string>
+    <string name="commission_node_hint3">Commission amount(HTDF)</string>
+    <string name="commission_node_hint4">Income withdrawal</string>
+    <string name="commission_node_hint6">Node name</string>
+    <string name="commission_node_hint7">Decommission</string>
+    <string name="commission_node_hint8">Commission(HTDF)</string>
+    <string name="commission_node_hint9">Annualized income</string>
+    <string name="commission_node_hint10">Delegates</string>
+    <string name="commission_node_hint11">Introduction</string>
+    <string name="commission_node_hint12">Search verification node address / name</string>
+    <string name="commission_node_hint14">Diversified mining</string>
+    <string name="commission_node_hint15">Node details</string>
+    <string name="commission_node_hint16">Delegate</string>
+    <string name="commission_node_hint17">Delegated Quantity (HTDF)</string>
+    <string name="commission_node_hint18">All</string>
+    <string name="commission_node_hint19">Delegated tutorial</string>
+    <string name="commission_node_hint20">Miner\'s fee 0.03HTDF</string>
+    <string name="commission_node_hint21">Miner\'s fee fee %sHTDF</string>
+    <string name="commission_node_hint22">Note: HRC token transfers must execute smart contracts. Each execution requires the consumption of part of the HTDF.If the miner fee is insufficient, the miner fee will be deducted after the broadcast fails.The miner fee is the maximum acceptable miner fee, not the actual miner fee.</string>
+    <string name="commission_node_hint23">Commission again</string>
+    <string name="commission_node_hint24">Delegated withdrawal</string>
+    <string name="commission_node_hint25">Number of withdrawals(HTDF)</string>
+    <string name="commission_node_hint26">Available quantity%sHTDF</string>
+    <string name="commission_node_hint27">Insufficient handling fee</string>
+    <string name="commission_node_hint28">Untrust application</string>
+    <string name="commission_node_hint29">Are you sure you want to initiate an application for decommissioning?\n You will no longer enjoy the entrusted income after the entrusted relationship is released, please proceed with caution</string>
+    <string name="commission_node_hint31">Prompt for dismissal</string>
+    <string name="commission_node_hint32">After the application for decommissioning is approved, the HTDF delegated to the node needs to be clicked and extracted in the delegation record before it can be credited</string>
+    <string name="unit_people">people</string>
+    <string name="commission_node_hint36">Lifted quantity</string>
+    <string name="commission_node_hint37">Revenue withdrawal details</string>
+    <string name="commission_node_hint38">Please enter the number of applications</string>
+    <string name="commission_node_hint39">The number of applications must be greater than 1</string>
+    <string name="commission_node_hint40">Dismissal application record</string>
+    <string name="commission_node_hint41">application time:%s</string>
+    <string name="commission_node_hint42">Number of applications:%s</string>
+    <string name="commission_node_hint43">extract</string>
+    <string name="commission_node_hint44">Re-apply</string>
+    <string name="commission_node_hint48">Application for detrust cannot exceed %s HTDF</string>
+    <string name="commission_node_hint49">Removable quantity: %s HTDF</string>
+    <string name="commission_node_hint50">Extraction failed</string>
+    <string name="commission_node_hint51">A maximum of 7 orders can be taken at the same time for withdrawal of non-arrival orders. If the order is exceeded, the withdrawal will fail and you need to wait for the completion of other orders.</string>
+    <string name="commission_node_hint52">Delegated</string>
+    <string name="commission_node_hint53">Number of applications</string>
+    <string name="commission_node_hint54">Transfer instructions</string>
+    <string name="commission_node_hint55">Dismiss progress</string>
+    <string name="commission_node_hint56">Successful application</string>
+    <string name="commission_node_hint57">Transaction processing</string>
+    <string name="commission_node_hint58">Successfully arrived</string>
+    <string name="commission_node_hint59">application time</string>
+    <string name="commission_node_hint60">Reason for rejection</string>
+    <string name="commission_node_hint61">Status: Applying</string>
+    <string name="commission_node_hint62">Status: Fail</string>
+    <string name="commission_node_hint63">Status: application passed-pending withdrawal</string>
+    <string name="commission_node_hint64">Status: Application passed-withdrawn pending receipt</string>
+    <string name="commission_node_hint65">Status: application passed-completed</string>
+    <string name="commission_node_hint66">turn down</string>
+    <string name="commission_node_hint67">Record details</string>
+    <string name="commission_node_hint68">Please wait patiently for the node administrator to review. After the review is passed, click Extract in the entrusted record. After the extraction is completed, the entrusted HTDF can be credited to the account.</string>
+    <string-array name="htdf_state">
+        <item>Applying</item>
+        <item>Applying</item>
+        <item>turn down</item>
+        <item>by</item>
+        <item>Extracting</item>
+        <item>To arrive</item>
+        <item>Extraction failed</item>
+        <item>carry out</item>
+    </string-array>
+    <string name="unmortgage_hint">Note: The commissioned HTDF will take about 2 weeks to arrive</string>
+
+    <string name="eth_fee_title">Advanced mode</string>
+    <string name="eth_fee_hint">Gas price (Gwei)</string>
+    <string name="eth_fee_hint2">Gas limit</string>
+    <string name="eth_fee_hint3">Please enter Gas price</string>
+    <string name="eth_fee_hint4">Please enter the Gas limit</string>
+    <string name="eth_fee_hint5">Gas limit must be greater than or equal to 21000</string>
+    <string name="eth_fee_hint6">Gas price must be greater than %s</string>
+    <string name="htdf_contract_create">Create contract</string>
+
+    <string name="xlm_fee">Miner\'s fee 0.00001XLM</string>
+    <string name="ad_content">It is expected that Walt wallet will close the transfer service of HET, USDP, BEI old chain after September 15, 2020 Singapore time. At present, Walt wallet already supports HRC20-HET, HRC20-USDP, HRC20-BEI token transfer.
+        \n
+        If you hold HET, USDP, BEI old chain coins in Walt wallet, you can transfer the old chain coins to Hetbi Exchange (www.hetbi.me) and exchange them for HRC20-HET, HRC20-USDP, HRC20-BEI Singapore dollar. When operating HRC20 type token transfer, please select the HRC20 chain type for transaction. The replacement of HRC20 tokens will last for three months, and the deadline is September 15.
+    </string>
+
+    <string name="ad_time">Walt wallet\nJune 12, 2020</string>
+    <string name="feedback_hint14">Submitted successfully</string>
+    <string name="quotes_all">all</string>
+    <string name="find_hint1">Financial activities</string>
+    <string name="find_htdf_title">HTDF diversified mining</string>
+    <string name="find_htdf_title1">Benefits of exclusive miners</string>
+    <string name="find_btc_choice_walt">Please select a wallet in the upper left corner first</string>
+    <string name="find_hint2">You have not created a wallet with HTDF, please create a wallet and add the HTDF currency address before you can use HTDF for diversified mining</string>
+    <string name="find_import">Go to create/import wallet</string>
+    <string name="index_ad_title">Announcement news</string>
+    <string name="search_hint">Enter search content</string>
+    <string name="request_permissions">Please go to App Management to open permissions</string>
+    <string-array name="transfer_type">
+        <item>All</item>
+        <item>Transfer</item>
+        <item>Collect money</item>
+    </string-array>
+    <string name="transfer_other">other</string>
+
+    <string name="tranfer_hint1">Transaction Type</string>
+    <string name="tranfer_hint2">Transaction types include transfer, collection, other</string>
+    <string name="tranfer_hint3">Transfer and collection: user-initiated on-chain transfer collection transaction\nOthers: HRC20 transaction deduction fees, diversified mining transactions</string>
+    <string name="tranfer_hint4">Transaction types include transfer and collection</string>
+    <string name="tranfer_hint5">Transfer and collection: user-initiated on-chain transfer collection transaction</string>
+    <string name="tranfer_hint6">Transfer and collection: user-initiated on-chain transfer collection transaction\nOthers: ERC20 transaction deduction fees</string>
+    <string name="node_tab_left">Super node</string>
+    <string name="node_tab_right">My commission</string>
+    <string name="node_my_hint1">General overview</string>
+    <string name="node_my_hint2">Number of delegated nodes</string>
+    <string name="node_my_hint3">Total amount commissioned</string>
+    <string name="node_my_hint4">Total commission income</string>
+    <string name="node_my_hint5">Total number of orders</string>
+    <string name="node_orderby">Sort</string>
+    <string-array name="notice_tab">
+        <item>Transfer notification</item>
+        <item>system information</item>
+    </string-array>
+    <string name="str_tiqu">Expected %s</string>
+    <string name="str_tiqu1">The withdrawn HTDF will arrive in %s, please be patient!</string>
+    <string name="str_tiqu2">The HTDF entrusted to %s has been withdrawn to the account</string>
+    <string name="history">History</string>
+    <string name="weituo_history">Commission record</string>
+</resources>

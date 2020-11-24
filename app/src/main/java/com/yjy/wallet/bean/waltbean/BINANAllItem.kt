@@ -1,0 +1,23 @@
+package com.yjy.wallet.bean.waltbean
+
+data class BINANAllItem(val priceChange: String = "",
+                        val symbol: String = "",
+                        val askPrice: String = "",
+                        val bidQty: String = "",
+                        val count: Int = 0,
+                        val openPrice: String = "",
+                        val lastId: Int = 0,
+                        val quoteVolume: String = "",
+                        val bidPrice: String = "",
+                        val firstId: Int = 0,
+                        val volume: String = "",
+                        val lastQty: String = "",
+                        val askQty: String = "",
+                        val weightedAvgPrice: String = "",
+                        val lowPrice: String = "",
+                        val highPrice: String = "",
+                        val closeTime: Long = 0,
+                        val prevClosePrice: String = "",
+                        val openTime: Long = 0,
+                        val priceChangePercent: String = "",
+                        val lastPrice: String = "")

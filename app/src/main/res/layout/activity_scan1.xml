@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:id="@+id/fl_zxing_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.weiyu.baselib.widget.TitleBar
+        android:id="@+id/title_tb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/elevation_1"
+        app:titleBarBackground="@color/alpha_50_black"
+        app:titleBarLeftImage="@mipmap/back_icon_white"
+        app:titleBarTitle="@string/scan_title2" />
+
+
+</RelativeLayout>

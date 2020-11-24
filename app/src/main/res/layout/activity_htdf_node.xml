@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.weiyu.baselib.widget.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleBarBackground="@color/white"
+        app:titleBarLeftImage="@mipmap/back_icon"
+        app:titleBarTitle="@string/commission_node_hint14" />
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp5"
+        android:layout_below="@+id/tb_title"
+        android:background="@color/bg_f5f5fb" />
+
+    <LinearLayout
+        android:id="@+id/ll_check"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp42"
+        android:layout_below="@+id/v_line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@drawable/btn_5f8def_border_24"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/dp3">
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="@dimen/dp93"
+            android:layout_height="@dimen/dp36"
+            android:background="@drawable/btn_blue_shape"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/node_tab_left"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp15" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="@dimen/dp93"
+            android:layout_height="@dimen/dp36"
+            android:layout_marginLeft="@dimen/dp8"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/node_tab_right"
+            android:textColor="@color/txt_454545"
+            android:textSize="@dimen/sp15" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_check" />
+
+    <com.weiyu.baselib.widget.ThumbnailView
+        android:id="@+id/tv_go_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/dp32"
+        android:layout_marginBottom="@dimen/dp24"
+        android:src="@mipmap/go_top_icon"
+        android:visibility="gone" />
+</RelativeLayout>

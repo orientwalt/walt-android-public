@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_f5f5fb"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.weiyu.baselib.widget.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/elevation_1"
+        app:titleBarBackground="@color/white"
+        app:titleBarLeftImage="@mipmap/back_icon"
+        app:titleBarTitle="@string/setting_jiedian" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="@color/white"
+        android:elevation="@dimen/elevation_1" />
+
+    <LinearLayout
+        android:id="@+id/ll_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp8"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_zh"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp56"
+            android:layout_below="@+id/cl_tab"
+            android:background="@drawable/layout_n_selector"
+            android:elevation="@dimen/elevation_1"
+            android:onClick="check"
+            android:paddingHorizontal="@dimen/dp16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rl_setting">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/dp12"
+                android:text="@string/setting_main"
+                android:textColor="@color/txt_333333" />
+
+
+            <ImageView
+                android:id="@+id/iv_check1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/gou" />
+
+            <View
+                android:id="@+id/v_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:layout_alignParentBottom="true"
+                android:background="@color/line_dddddd" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_en"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp56"
+            android:layout_below="@+id/cl_tab"
+            android:background="@drawable/layout_n_selector"
+            android:elevation="@dimen/elevation_1"
+            android:onClick="check"
+            android:paddingHorizontal="@dimen/dp16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rl_setting">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/dp12"
+                android:text="@string/setting_test"
+                android:textColor="@color/txt_333333" />
+
+
+            <ImageView
+                android:id="@+id/iv_check2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/gou"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

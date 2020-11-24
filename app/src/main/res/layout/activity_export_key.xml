@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.weiyu.baselib.widget.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/elevation_1"
+        app:titleBarBackground="@color/white"
+        app:titleBarLeftImage="@mipmap/back_icon"
+        app:titleBarTitle="@string/exportkey_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="@color/white"
+        android:elevation="@dimen/elevation_1" />
+
+    <com.androidkun.xtablayout.XTabLayout
+        android:id="@+id/tl_import"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        app:xTabDividerColor="@color/white"
+        app:xTabDividerWidthWidthText="true"
+        app:xTabIndicatorColor="@color/bg_3B83FC"
+        app:xTabIndicatorHeight="@dimen/dp4"
+        app:xTabIndicatorRoundX="@dimen/dp2"
+        app:xTabIndicatorRoundY="@dimen/dp2"
+        app:xTabMode="fixed"
+        app:xTabSelectedTextColor="@color/tx_364964"
+        app:xTabSelectedTextSize="@dimen/sp16"
+        app:xTabTextColor="@color/tx_8F95A9"
+        app:xTabTextSize="@dimen/sp16" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

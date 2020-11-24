@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 控件被按下时为黑色 -->
+    <item android:color="@color/title_bg_5f8def" android:state_selected="true"></item>
+    <!-- 其他状态下为白色 -->
+    <item android:color="@color/txt_8f95a9"></item>
+</selector>

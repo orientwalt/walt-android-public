@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/code_bg" />
+
+    <com.weiyu.baselib.widget.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/statusbar_view_height"
+        app:titleBarBackground="@color/transparent"
+        app:titleBarLeftImage="@mipmap/back_icon_white"
+        app:titleBarTitle="@string/receive_title" />
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/iv_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-32dp"
+        android:scaleType="fitCenter" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_icon"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dp32">
+
+        <RelativeLayout
+            android:id="@+id/rl_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp52"
+            android:layout_alignLeft="@+id/iv_code"
+            android:layout_alignRight="@+id/iv_code"
+            android:background="@color/bg_eeeeee">
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_centerInParent="true"
+                android:drawableRight="@mipmap/copy_index_icon"
+                android:ellipsize="middle"
+                android:paddingHorizontal="@dimen/dp8"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_code"
+            android:layout_width="@dimen/dp245"
+            android:layout_height="@dimen/dp245"
+            android:layout_below="@+id/rl_address"
+            android:layout_centerInParent="true"
+            android:background="@color/bg_f5f5f5"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_code"
+            android:layout_marginHorizontal="@dimen/dp32"
+            android:layout_marginTop="@dimen/dp16"
+            android:gravity="center"
+            android:textColor="@android:color/holo_red_light" />
+    </RelativeLayout>
+</RelativeLayout>

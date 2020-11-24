@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_f5f5fb"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.weiyu.baselib.widget.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleBarBackground="@color/white"
+        app:titleBarLeftImage="@mipmap/back_icon"
+        app:titleBarTitle="@string/history" />
+
+    <LinearLayout
+        android:id="@+id/ll_my"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp16"
+        android:background="@drawable/gradient_blue3"
+        android:orientation="vertical"
+        android:padding="@dimen/dp16"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/commission_node_hint1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp15" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp16"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_weituo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/go_in_white"
+                    android:drawablePadding="@dimen/dp8"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="@string/node_my_hint5"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp12" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp4"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/ttt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/dp4"
+                    android:drawableRight="@mipmap/go_in_white"
+                    android:drawablePadding="@dimen/dp8"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="@string/commission_node_hint4"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp12" />
+
+                <com.weiyu.baselib.widget.ThumbnailView
+                    android:id="@+id/tv_tan"
+                    android:layout_width="@dimen/dp32"
+                    android:layout_height="@dimen/dp32"
+                    android:layout_toRightOf="@+id/ttt"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/tanhao"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp4">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_my_price"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp25"
+                android:layout_marginTop="@dimen/dp4"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="@dimen/dp18"
+                android:autoSizeMinTextSize="@dimen/dp10"
+                android:enabled="false"
+                android:gravity="left|center_vertical"
+                android:paddingRight="@dimen/dp16"
+                android:text="0.0HTDF"
+                android:textColor="@color/white"
+                app:autoSizeStepGranularity="1dp"
+                app:autoSizeTextType="uniform" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_my_price2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp25"
+                android:layout_marginTop="@dimen/dp4"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="@dimen/dp18"
+                android:autoSizeMinTextSize="@dimen/dp10"
+                android:enabled="false"
+                android:gravity="left|center_vertical"
+                android:text="0.0HTDF"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp18"
+                app:autoSizeStepGranularity="1dp"
+                app:autoSizeTextType="uniform" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp16"
+        android:background="@drawable/layout_shape"
+        android:orientation="vertical"
+        android:padding="@dimen/dp16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp4"
+            android:singleLine="true"
+            android:text="@string/commission_node_hint40"
+            android:textColor="@color/txt_333333"
+            android:textSize="@dimen/dp15" />
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/srl_coin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp8">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcv_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+</LinearLayout>

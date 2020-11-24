@@ -1,0 +1,1 @@
+include ':app', ':baselib', ':coldar', ':FaceLivenessOpen-2.1.6.15', ':NoCaptchaSDK-external-release-5.4.33', ':oss-android-sdk-2.9.2', ':SecurityBodySDK-external-release-5.4.79', ':SecurityGuardSDK-external-release-5.4.9901', ':rpsdk-3.0.0.5', ':passlibrary', ':touch_htdf_sdk_v1.0.1', ':longImg', ':ImagePicker', ':guide', ':xtablayoutlibrary', ':update-app'

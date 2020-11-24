@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.weiyu.baselib.widget.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleBarBackground="@color/white"
+        app:titleBarLeftImage="@mipmap/back_icon"
+        app:titleBarTitle="@string/eth_fee_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp16"
+        android:text="@string/eth_fee_hint"
+        android:textColor="@color/txt_333333"
+        android:textSize="@dimen/dp15" />
+
+    <EditText
+        android:id="@+id/et_gas"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp42"
+        android:layout_marginHorizontal="@dimen/dp16"
+        android:layout_marginVertical="@dimen/dp8"
+        android:background="@drawable/btn_eeeeee_shape"
+        android:inputType="number"
+        android:maxLength="3"
+        android:paddingHorizontal="@dimen/dp8"
+        android:singleLine="true"
+        android:textSize="@dimen/sp14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp16"
+        android:text="@string/eth_fee_hint2"
+        android:textColor="@color/txt_333333"
+        android:textSize="@dimen/dp15" />
+
+    <EditText
+        android:id="@+id/et_gaslimit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp42"
+        android:layout_marginHorizontal="@dimen/dp16"
+        android:layout_marginVertical="@dimen/dp8"
+        android:background="@drawable/btn_eeeeee_shape"
+        android:inputType="number"
+        android:maxLength="6"
+        android:paddingHorizontal="@dimen/dp8"
+        android:singleLine="true"
+        android:textSize="@dimen/sp14" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp16"
+        android:text="Nonce"
+        android:textColor="@color/txt_333333"
+        android:textSize="@dimen/dp15" />
+
+    <EditText
+        android:id="@+id/et_nonce"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp42"
+        android:layout_marginHorizontal="@dimen/dp16"
+        android:layout_marginVertical="@dimen/dp8"
+        android:background="@drawable/btn_eeeeee_shape"
+        android:inputType="number"
+        android:maxLength="10"
+        android:paddingHorizontal="@dimen/dp8"
+        android:singleLine="true"
+        android:textSize="@dimen/sp14" />
+
+    <TextView
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_emslogin"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/dp24"
+        android:layout_marginTop="@dimen/dp32"
+        android:layout_marginBottom="@dimen/dp56"
+        android:background="@drawable/btn_5f8def_selector"
+        android:elevation="@dimen/dp2"
+        android:gravity="center"
+        android:paddingVertical="@dimen/dp12"
+        android:text="@string/str_sure"
+        android:textColor="@color/white" />
+</LinearLayout>

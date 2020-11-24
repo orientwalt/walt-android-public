@@ -1,0 +1,21 @@
+package com.yjy.wallet.bean.usdt
+
+data class USDTTx(val amount: String = "",
+                  val propertyname: String = "",
+                  val divisible: Boolean = false,
+                  val fee: String = "0",
+                  val flags: String = "",
+                  val ismine: Boolean = false,
+                  val txid: String = "",
+                  val confirmations: Int = 0,
+                  val type: String = "",
+                  val version: Int = 0,
+                  val sendingaddress: String = "",
+                  val valid: Boolean = false,
+                  val blockhash: String = "",
+                  val blocktime: Long = 0,
+                  val positioninblock: Int = 0,
+                  val referenceaddress: String = "",
+                  val block: Long = 0,
+                  val propertyid: Int = 0,
+                  val typeInt: Int = 0)

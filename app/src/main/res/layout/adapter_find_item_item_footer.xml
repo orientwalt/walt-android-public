@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:layout_below="@+id/tv_hint1"
+        android:layout_marginBottom="@dimen/dp16"
+        android:background="@color/line_dddddd" />
+
+    <ImageView
+        android:id="@+id/tv_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/dp16"
+        android:gravity="center"
+        android:src="@mipmap/find_show_icon1" />
+</RelativeLayout>

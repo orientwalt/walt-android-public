@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+       
+
+        <!--update-->
+        
+    <string name="update_cancel_load"> cancel download </string>
+        
+    <string name="update_dialog_title">OK download?</string>
+        
+    <string name="update_dialog_msg">Do not download under wifi will generate traffic\n download?</string>
+        
+    <string name="update_dialog_cancel">Cancel </string>
+        
+    <string name="update_dialog_commit">Sure </string>
+       
+        
+    <string name="update_tig">Please authorize access to storage space permissions, otherwise the app cannot be updated </string>
+        
+    <string name="update_size">new version size: %s\n\n</string>
+        
+    <string name="update_f_title">version update</string>
+        
+    <string name="update_f_btn">Upgrade now</string>
+        
+    <string name="update_f_btn2">Ignore this version </string>
+        
+    <string name="update_f_msg">update content:</string>
+
+    <string name="check_version">No new version found</string>
+
+    <string name="empty_word">Please enter mnemonics</string>
+    <string name="err_10000">Parameter error </string>
+        
+    <string name="err_10001">Signature error </string>
+        
+    <string name="err_10002">payment code error </string>
+        
+    <string name="err_10003">The currency has not been opened </string>
+        
+    <string name="err_10004">Invalid payment code</string>
+        
+    <string name="err_10005">payment code has expired </string>
+        
+    <string name="err_10006">payment code has expired </string>
+        
+    <string name="err_10007">Please bind the wallet first</string>
+        
+    <string name="err_10008">User does not exist </string>
+        
+    <string name="err_10009">The same account cannot be transferred </string>
+        
+    <string name="err_10010">Please scan the code after becoming a merchant</string>
+        
+    <string name="err_10011">Please set the payment password first</string>
+        
+    <string name="err_10012">ERROR</string>
+        
+    <string name="err_10013">Generate order failed</string>
+        
+    <string name="err_10014">Internal error </string>
+        
+    <string name="err_10015"> insufficient payer balance </string>
+        
+    <string name="err_10016"> ​​currency is invalid </string>
+        
+    <string name="err_10017">Request has expired </string>
+        
+    <string name="err_10018">order is not completed </string>
+        
+    <string name="err_10019">Mailbox already exists </string>
+        
+    <string name="err_10020">The activation code is valid </string>
+        
+    <string name="err_10021">The activation code is not invalid </string>
+        
+    <string name="err_10022">The activation code has expired </string>
+        
+    <string name="err_10023">Two passwords are inconsistent</string>
+        
+    <string name="err_10024">Mailbox is not registered </string>
+        
+    <string name="err_10025">The account or password is incorrect </string>
+        
+    <string name="err_10026">Please enable the payment function first</string>
+        
+    <string name="err_10027">Amount error </string>
+        
+    <string name="err_10028">Login expired, please log in again</string>
+        
+    <string name="err_10029">Invalid order</string>
+        
+    <string name="err_10030">Payment password error </string>
+        
+    <string name="err_10031">No data </string>
+        
+    <string name="err_10032">Invalid file</string>
+        
+    <string name="err_10033">The original password is incorrect </string>
+        
+    <string name="err_10034">The wallet has been bound </string>
+        
+    <string name="err_10035">wallet does not exist</string>
+        
+    <string name="err_10036">Request expired</string>
+        
+    <string name="err_10037">Recommended code error </string>
+        
+    <string name="err_10038">The event has not started or has ended </string>
+        
+    <string name="err_10039">The number of purchases is greater than the configured amount </string>
+        
+    <string name="err_10040">ID card already exists</string>
+    <string name="err_10041">Number does not exist</string>
+        
+    <string name="err_10042">The verification code is invalid </string>
+    <string name="err_10043">The number already exists</string>
+    <string name="err_10044">The number of extractions cannot be less than %s</string>
+    <string name="err_10045">More than one-day coin limit</string>
+    <string name="err_10046">Too often</string>
+    <string name="err_10047">Incorrect file</string>   
+    <string name="err_10048">The ID already exists</string>   
+    <string name="err_10049">Certification pending review</string>  
+    <string name="err_10050">Authentication completed</string>
+    <string name="err_10051">Under 18 years old</string>
+    <string name="not_net">No network, please try again later.</string>
+    <string name="send_err_pwd2">Password error</string> 
+
+    <string name="smartrefresh_hint1">Pull down to refresh</string>
+    <string name="smartrefresh_hint2">Refreshing...</string>
+    <string name="smartrefresh_hint3">loading...</string>
+    <string name="smartrefresh_hint4">Release to refresh immediately</string>
+    <string name="smartrefresh_hint5">Refresh complete</string>
+    <string name="smartrefresh_hint6">Refresh failed</string>
+    <string name="smartrefresh_hint7">Last updated M-d HH:mm</string>
+    <string name="smartrefresh_hint8">Release into the second floor</string>
+    <string name="smartrefresh_hint9">Pull up to load more</string>
+    <string name="smartrefresh_hint10">Release to load immediately</string>
+    <string name="smartrefresh_hint11">Loading completed</string>
+    <string name="smartrefresh_hint12">Failed to load</string>
+    <string name="smartrefresh_hint13">All loaded</string>
+</resources>

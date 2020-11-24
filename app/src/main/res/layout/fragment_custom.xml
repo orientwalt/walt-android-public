@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dp16">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp16"
+        android:text="@string/add_token_custom_hint" />
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp42"
+        android:layout_marginTop="@dimen/dp4"
+        android:maxLength="42"
+        android:background="@drawable/btn_5f8def_border_selector"
+        android:digits="@string/edittext_input_type"
+        android:paddingHorizontal="@dimen/dp8"
+        android:textSize="@dimen/dp14" />
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp4"
+        android:text="@string/add_token_custom_hint2"
+        android:textColor="@color/btn_bg_fc5555"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dp16"
+        android:text="@string/add_token_custom_hint2" />
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp42"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dp4"
+        android:maxLength="12"
+        android:background="@drawable/btn_5f8def_border_selector"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghigjklmnopqrstuvwxyz"
+        android:paddingHorizontal="@dimen/dp8"
+        android:textSize="@dimen/dp14" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dp16"
+        android:text="@string/add_token_custom_hint3" />
+
+    <EditText
+        android:id="@+id/et_decimal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp42"
+        android:layout_marginTop="@dimen/dp4"
+        android:visibility="gone"
+        android:background="@drawable/btn_5f8def_border_selector"
+        android:inputType="number"
+        android:maxLength="2"
+        android:hint="0"
+        android:paddingHorizontal="@dimen/dp8"
+        android:textSize="@dimen/dp14" />
+</LinearLayout>

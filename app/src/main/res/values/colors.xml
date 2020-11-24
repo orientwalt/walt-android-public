@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#317CFB</color>
+    <color name="colorPrimaryDark">#317CFB</color>
+    <color name="colorAccent">#317CFB</color>
+    <!--line-->
+    <color name="line_dddddd">#FFEFEFEF</color>
+    <!--txt-->
+    <!--titl-->
+    <color name="title_bg_5f8def">#317CFB</color>
+    <!--btnbg-->
+    <color name="btn_bg_5f8def">#317CFB</color>
+
+    <color name="btn_bg_5f8def_50">#805f8def</color>
+    <color name="btn_bg_cccccc">#cccccc</color>
+
+    <color name="btn_bg_fc5555_50">#80fc5555</color>
+    <!--bg-->
+    <color name="bg_f5f5f5">#f5f5f5</color>
+    <color name="bg_f5f5fb">#F5F5FB</color>
+    <color name="bg_eeeeee">#eeeeee</color>
+    <color name="bg_e4edff">#e4edff</color>
+    <color name="bg_598ee4">#598ee4</color>
+    <color name="alpha_50_black">#80000000</color>
+    <color name="color_orange">#FF8F02</color>
+    <color name="color_orange_20">#32FF8F02</color>
+
+    <color name="color_red2">#FF0000</color>
+    <color name="color_red2_20">#32FF0000</color>
+    <color name="color_green2">#23BA39</color>
+    <color name="color_green2_20">#3223BA39</color>
+    <color name="color_blue2">#317CFB</color>
+    <color name="color_blue2_20">#32317CFB</color>
+    <color name="color_blue3">#001FFF</color>
+    <color name="color_blue3_20">#32001FFF</color>
+    <color name="txt_454545">#454545</color>
+
+    <color name="bg_fea100">#FEA100</color>
+    <color name="bg_e77f3c">#F7961B</color>
+    <color name="bg_e77f3c_50">#80F7961B</color>
+    <color name="bg_41a5f6">#41A5F6</color>
+    <color name="bg_3a88f6">#3A88F6</color>
+    <color name="bg_3950d1">#3950D1</color>
+    <color name="bg_576ceb">#576CEB</color>
+    <color name="bg_e5eeff">#E5EEFF</color>
+    <color name="bg_welcome">#5F9AFF</color>
+    <color name="bg_welcome2">#3C69F8</color>
+    <color name="btn_g_659eff">#659EFF</color>
+    <color name="btn_g_307bf9">#307BF9</color>
+    <color name="btn_g_659eff50">#80659EFF</color>
+    <color name="btn_g_307bf950">#80307BF9</color>
+    <color name="bg_3B83FC">#3B83FC</color>
+    <color name="tx_364964">#364964</color>
+    <color name="tx_8F95A9">#8F95A9</color>
+</resources>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_f5f5fb"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.weiyu.baselib.widget.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleBarBackground="@color/white"
+        app:titleBarLeftImage="@mipmap/back_icon"
+        app:titleBarTitle="@string/commission_node_hint4" />
+
+    <RelativeLayout
+        android:id="@+id/rl_node"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tb_title"
+        android:layout_marginHorizontal="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp16"
+        android:background="@drawable/layout_shape"
+        android:padding="@dimen/dp16">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/dp32"
+            android:layout_height="@dimen/dp32"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp8"
+            android:scaleType="fitXY"
+            android:src="@mipmap/node_icon1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_jiechu"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/commission_node_hint6"
+                android:textColor="@color/txt_333333"
+                android:textSize="@dimen/dp17" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp4"
+                android:ellipsize="middle"
+                android:singleLine="true"
+                android:text="htdf1EGWEW......UGT34UIHTU"
+                android:textColor="@color/txt_8f95a9"
+                android:textSize="@dimen/dp12" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_jiechu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_blue_selector"
+            android:gravity="center"
+            android:maxWidth="@dimen/dp100"
+            android:paddingHorizontal="@dimen/dp16"
+            android:paddingVertical="@dimen/dp12"
+            android:singleLine="true"
+            android:text="@string/commission_node_hint7"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_node"
+        android:layout_marginHorizontal="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@drawable/layout_shape"
+        android:padding="@dimen/dp16">
+
+        <TextView
+            android:id="@+id/tv_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/commission_node_hint25"
+            android:textColor="@color/txt_333333"
+            android:textSize="@dimen/dp17" />
+
+        <TextView
+            android:id="@+id/et_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_txt"
+            android:layout_marginTop="@dimen/dp16"
+            android:background="@drawable/input_bg_shape2"
+            android:paddingHorizontal="@dimen/dp16"
+            android:paddingVertical="@dimen/dp24"
+            android:singleLine="true"
+            android:textSize="@dimen/dp14" />
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/et_price"
+            android:layout_alignRight="@+id/et_price"
+            android:layout_alignBottom="@+id/et_price"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="@dimen/dp16"
+            android:text="@string/commission_node_hint18"
+            android:textColor="@color/title_bg_5f8def"
+            android:textSize="@dimen/dp15"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_gas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_price"
+            android:layout_marginTop="@dimen/dp16"
+            android:text="@string/commission_node_hint20"
+            android:textColor="@color/title_bg_5f8def"
+            android:textSize="@dimen/dp12" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_gas"
+            android:layout_marginTop="@dimen/dp16"
+            android:textColor="@color/txt_8f95a9"
+            android:textSize="@dimen/dp12" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_emslogin"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/dp24"
+        android:layout_marginTop="@dimen/dp32"
+        android:layout_marginBottom="@dimen/dp56"
+        android:background="@drawable/btn_5f8def_selector"
+        android:elevation="@dimen/dp2"
+        android:gravity="center"
+        android:onClick="weituo"
+        android:paddingVertical="@dimen/dp12"
+        android:text="@string/commission_btn"
+        android:textColor="@color/white" />
+</RelativeLayout>

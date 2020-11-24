@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp52"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/walletinfo_dialog_name_title"
+        android:textColor="@color/txt_333333"
+        android:textSize="@dimen/dp16" />
+
+
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginHorizontal="@dimen/dp16"
+        android:layout_marginVertical="@dimen/dp16"
+        android:background="@drawable/btn_f5f5f5_shape"
+        android:hint="@string/import_input_name_hint"
+        android:maxLength="20"
+        android:padding="@dimen/dp16"
+        android:singleLine="true"
+        android:textSize="@dimen/dp14" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_pwd"
+        android:layout_marginHorizontal="@dimen/dp32"
+        android:layout_marginTop="@dimen/dp32"
+        android:layout_marginBottom="@dimen/dp48"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_sure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_60ded0_shape_left"
+            android:elevation="@dimen/dp2"
+            android:gravity="center"
+            android:paddingVertical="@dimen/dp12"
+            android:text="@string/coin_dialog_close"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/btn_sure2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_5f8def_shape_right"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:paddingVertical="@dimen/dp12"
+            android:text="@string/send_dialog_btn2"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

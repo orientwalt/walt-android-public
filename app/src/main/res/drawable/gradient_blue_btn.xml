@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 连框颜色值 -->
+    <item>
+        <shape>
+            <solid android:color="@color/transparent" />
+            <corners android:radius="@dimen/dp24" />
+
+        </shape>
+    </item>
+    <!-- 主体背景颜色值 -->
+    <item
+        android:bottom="1dp"
+        android:left="1dp"
+        android:right="1dp"
+        android:top="1dp">
+        <shape>
+            <gradient
+                android:angle="0"
+                android:endColor="@color/btn_g_307bf9"
+                android:startColor="@color/btn_g_659eff"
+                android:type="linear" />
+
+            <padding
+                android:bottom="@dimen/dp24"
+                android:left="@dimen/dp24"
+                android:right="@dimen/dp24"
+                android:top="@dimen/dp24" />
+            <!-- 圆角 -->
+            <corners android:radius="@dimen/dp24" />
+        </shape>
+    </item>
+</layer-list>

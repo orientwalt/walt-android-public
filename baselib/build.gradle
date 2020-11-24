@@ -1,0 +1,81 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 28
+
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    //imagepick需要
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //沉浸式
+    api 'com.jaeger.statusbarutil:library:1.5.1'
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    api 'io.reactivex.rxjava2:rxjava:2.2.9'
+    api 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    api 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
+    api 'de.greenrobot:eventbus:2.4.0'
+//    api 'com.qianwen:update-app-kotlin:1.2.3'
+    api 'com.qianwen:update-app:3.5.2'
+    api 'me.grantland:autofittextview:0.2.1'
+    //    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.github.bumptech.glide:glide:4.1.1'
+    api 'com.squareup.okhttp:okhttp:2.7.5'
+    api 'com.squareup.retrofit2:retrofit:2.5.0'
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.5.0'
+    api 'com.squareup.retrofit2:converter-gson:2.5.0'
+    api 'com.squareup.okhttp3:logging-interceptor:3.12.3'
+    api 'com.squareup.retrofit2:converter-scalars:2.4.0'
+    api 'com.android.support:multidex:1.0.3'
+    api 'cn.yipianfengye.android:zxing-library:2.2'
+    api 'cn.bingoogolapple:bga-refreshlayout:1.1.7'
+    api 'com.trello.rxlifecycle2:rxlifecycle:2.2.1'
+    api 'com.trello.rxlifecycle2:rxlifecycle-components:2.2.1'
+    api 'com.trello.rxlifecycle2:rxlifecycle-components-preference:2.2.1'
+    api 'com.github.yilylong:CBDialog:v1.0.7'
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-5'
+    api 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.4-5'
+//    api 'com.lzy.widget:imagepicker:0.6.1'
+    api 'com.lzy.net:okgo:3.0.4'
+    api 'com.lzy.net:okserver:2.0.5'
+//    api 'com.lqr.imagepicker:library:1.0.0'
+    api 'top.zibin:Luban:1.1.8'
+    //tinker
+    api("com.tencent.tinker:tinker-android-lib:${TINKER_VERSION}") { changing = true }
+    api("com.tencent.tinker:tinker-android-loader:${TINKER_VERSION}") { changing = true }
+    annotationProcessor("com.tencent.tinker:tinker-android-anno:${TINKER_VERSION}") {
+        changing = true
+    }
+    compileOnly("com.tencent.tinker:tinker-android-anno:${TINKER_VERSION}") { changing = true }
+    implementation 'com.android.support:multidex:1.0.3'
+    api 'com.hbb20:ccp:2.2.9'
+    api 'com.gongwen:marqueelibrary:1.1.3'
+    api 'cn.ustory.qy:kadapter:1.0.4'
+}
+repositories {
+    mavenCentral()
+}

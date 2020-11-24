@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <dimen name="elevation_05">@dimen/dp0.5</dimen>-->
+<!--    <dimen name="elevation_1">@dimen/dp1</dimen>-->
+<!--    <dimen name="elevation_2">@dimen/dp2</dimen>-->
+<!--    <dimen name="elevation_4">@dimen/dp4</dimen>-->
+    <dimen name="elevation_05">0dp</dimen>
+    <dimen name="elevation_1">0dp</dimen>
+    <dimen name="elevation_2">0dp</dimen>
+    <dimen name="elevation_4">0dp</dimen>
+</resources>

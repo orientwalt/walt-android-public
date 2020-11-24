@@ -1,0 +1,560 @@
+<resources>
+    <string name="app_name">Walt</string>
+    <!--splash-->
+    <string name="splash_btn_create">创建钱包</string>
+    <string name="splash_btn_import">导入钱包</string>
+    <!--main-->
+    <string name="main_tab_item0">资产</string>
+    <string name="main_tab_item1">热钱包</string>
+    <string name="main_tab_item2">我的</string>
+    <string name="main_tab_item7">发现</string>
+    <!--myfragment-->
+    <string name="main_fragment_item_address">地址本</string>
+    <string name="main_fragment_item_setting">系统设置</string>
+    <string name="main_fragment_item_help">帮助中心</string>
+    <string name="main_fragment_item_about">关于我们</string>
+    <string name="main_fragment_hint2">多链钱包，多币种支持\n大额资产建议使用冷钱包进行管理</string>
+    <!--indexfragment-->
+    <string name="index_price">总资产</string>
+    <string name="index_add_title">添加钱包</string>
+    <string name="index_create_hint">创建新钱包,且可以通过导出私钥、助记词、Keystore进行备份</string>
+    <string name="index_import_hint">通过已有钱包助记词或私钥导入</string>
+    <string name="index_hint1">该钱包还未备份助记词，为防止忘记安全密码、删除 APP或手机丢失等情况下造成资产损失，请及时备份 助记词。</string>
+    <string name="index_hint_title">安全提醒</string>
+    <!--import-->
+    <string name="import_type">导入Keystore类型和所选币种不匹配</string>
+    <string name="import_keystore_hint">keystore文本内容</string>
+    <string name="import_key_hint">明文私钥</string>
+    <string name="import_ing">正在导入…</string>
+    <string name="import_keystore_txt">直接复制粘贴华特东方官方钱包keystore文件内容至输入框。或者通过生成Keystore内容二维码,扫描录入</string>
+    <string name="import_keystore_err">keystore文件错误</string>
+    <string name="import_txt_what1">什么是keystore</string>
+    <string name="import_txt_what3">什么是助记词</string>
+    <string name="what_words">什么是助记词?</string>
+    <string name="what_privacy">什么是私钥?</string>
+    <string name="what_key">什么是keystore?</string>
+    <string name="import_words_toast">助记词无效</string>
+    <string name="import_words_toast2">请输入十二个助记词</string>
+    <string name="import_key_toast">请输入正确的私钥</string>
+    <array name="import_tab">
+        <item>助记词</item>
+        <item>Keystore文件</item>
+        <item>私钥</item>
+    </array>
+
+    <!--create-->
+    <string name="import_txt_hint">密码用于加密私钥,强度非常重要!\n钱包不会储存密码,也无法帮您找回,请务必牢记!</string>
+    <string name="import_input_name_hint">输入钱包名称</string>
+    <string name="import_input_pwd_hint">输入您的密码</string>
+    <string name="import_input_pwd_hint2">确认您的密码</string>
+    <string name="import_txt_agree">我已仔细阅读并同意</string>
+    <string name="import_txt_privacy">《服务与隐私条款》</string>
+    <string name="import_dialog_title">备份钱包</string>
+    <string name="create_dialog_txt">区块链钱包不同于传统网站账户,它是基于密码学的去中心化账户系统。\n\n你必须自己保管好钱包的私钥和交易密码,任何意外发生都会导致资产丢失。\n\n我们建议先做好双重备份，再打入小额测试,然后开始愉快使用</string>
+    <string name="create_dialog_words">备份助记词</string>
+    <string name="create_dialog_words_hint">丢失钱包或者忘记密码时,可帮助恢复钱包</string>
+    <string name="create_dialog_key">备份keystore文件</string>
+    <string name="create_dialog_key_hint">官方钱包格式,交易密码保护的私钥文件</string>
+    <string name="create_dialog_btn">立即备份</string>
+    <!--about-->
+    <string name="about_version">当前版本 %s</string>
+    <string name="about_txt">基于区块链数字生态智慧家园</string>
+    <string name="about_server">服务协议</string>
+    <string name="about_privacy">隐私条款</string>
+    <string name="about_log">版本日志</string>
+    <string name="about_check">检测新版</string>
+    <!--help-->
+    <string name="help_title">帮助中心</string>
+
+    <!--setting-->
+    <string name="setting_language">多语言</string>
+    <string name="setting_jiedian">节点设置</string>
+    <string name="setting_main">主网</string>
+    <string name="setting_test">测试网</string>
+    <!--language-->
+    <string name="language_en">English</string>
+    <string name="language_zh">简体中文</string>
+
+    <!--words-->
+    <string name="words_title">确认助记词</string>
+    <string name="words_sure">确认你的钱包助记词</string>
+    <string name="words_sure_hint">请按顺序点击助记词,已确认你备份的助记词正确。</string>
+    <string name="words_sure_finish">完成</string>
+    <string name="words_sure_finish1">助记词确认正确</string>
+    <string name="words_sure_finish2">助记词确认错误</string>
+    <!--exportwords-->
+    <string name="exportwords_title">备份助记词</string>
+    <string name="exportwords_sure_hint">助记词用于恢复钱包或重置钱包密码,将它准确的抄写到纸上,并存放在只有你知道的安全地方。</string>
+    <string name="exportwords_next">下一步</string>
+
+    <!--exportkey-->
+    <string name="exportkey_title">导出keystore</string>
+    <string name="exportkey_sure">离线保存</string>
+    <string name="exportkey_sure_hint">请复制黏贴keystore文件到安全、离线的地方保存。切勿保存至邮箱记事本、网盘、聊天工具等,非常危险</string>
+    <string name="exportkey_sure_hint_p">切勿保存至邮箱、笔记本、网盘、聊天工具等,非常危险</string>
+    <string name="exportkey_sure1">请勿使用网络传输</string>
+    <string name="exportkey_sure_hint1">请勿通过网络工具传输keystore文件,一但被黑客获取将造成不可挽回的资产损失。建议离线设备通过二维码方式传输。</string>
+    <string name="exportkey_sure_hint1_p">请勿通过网络工具传输,一但被黑客获取将造成不可挽回的资产损失。建议离线设备通过二维码方式传输。</string>
+    <string name="exportkey_sure2">密码保险箱保存</string>
+    <string name="exportkey_sure_hint2">如需在线保存,则建议使用安全等级更高的密码保管软件保存keystore。</string>
+    <string name="exportkey_sure_hint2_p">建议使用密码管理工具管理</string>
+    <string name="exportkey_sure3">仅供直接扫描</string>
+    <string name="exportkey_sure_hint3">二维码禁止保存、截图、以及拍照。仅供用户在安全环境下直接扫描来方便导入钱包。</string>
+    <string name="exportkey_sure4">在安全的环境下使用</string>
+    <string name="exportkey_sure_hint4">请在确保四周无人及无摄像头的情况下使用。二维码一但被他人获取将造成不可挽回的资产损失。</string>
+    <string name="exportkey_next">复制keystore</string>
+    <string name="exportkey_next2">复制私钥</string>
+    <array name="export_tab">
+        <item>KetStore文件</item>
+        <item>二维码</item>
+    </array>
+    <array name="export_tab1">        
+        <item>私钥</item>        
+        <item>二维码</item>   
+    </array>
+    <!--create-->
+    <string name="create_language">语言选择</string>
+    <string name="create_toast_create">正在创建钱包…</string>
+    <string name="create_toast_remark">请输入钱包名</string>
+    <string name="create_toast_input_key">请输入私钥</string>
+    <string name="create_toast_input_keystore">请输入keystore</string>
+    <string name="create_toast_hasremark">钱包名称已存在</string>
+    <string name="create_toast_pwd">请输入密码</string>
+    <string name="create_toast_agree">请仔细阅读并同意《服务与隐私条款》</string>
+    <string name="create_toast_no_equals">两次密码不一致</string>
+    <string name="create_pwd_hint">8–16位数字、字母组成。</string>
+    <string name="create_htdf">同时创建HTDF钱包</string>
+    <!--walletlist-->
+    <string name="walletlist_title">钱包管理</string>
+
+    <!--receive-->
+    <string name="receive_title">收款码</string>
+    <string name="receive_copy_toast">已复制到剪切板</string>
+    <string name="receive_hint">该地址只接受%s资产，请勿转入其他币种资产，否则资产将不可找回。</string>
+    <!--send-->
+    <string name="send_price">余额:</string>
+    <string name="send_err_pwd">密码错误</string>
+    <string name="send_input_pwd">请输入密码</string>
+    <string name="send_dialog_item1">订单信息</string>
+    <string name="send_dialog_item2">转入地址</string>
+    <string name="send_dialog_item3">转出地址</string>
+    <string name="send_fee_hint">手续费越高,转账速度越快</string>
+    <string name="send_fee_hint2">说明:ETH转账单次合约执行需要扣除部分ETH,一笔交易成功由程序执行合约次数N决定,当前手续费为最大可接受手续费,交易失败也会扣除已执行的合约次数的费用</string>
+    <string name="send_dialog_item4">金额</string>
+    <string name="send_dialog_btn">确定</string>
+    <string name="send_dialog_btn2">确认</string>
+    <string name="send_dialog_title">支付详情</string>
+    <string name="send_dialog_title2">确认密码</string>
+    <string name="send_dialog_pwd_hint">请输入钱包密码</string>
+    <string name="send_not_to_hint">请输入转账地址</string>
+    <string name="send_not_amount_hint">请输入转账金额</string>
+    <string name="send_not_amount_hint2">转账金额必须大于0</string>
+    <string name="send_amout_hint">转账数量太少，无法提供服务</string>
+    <string name="send_amout_not_balance1">ETH余额不足,无法进行合约转账</string>
+    <string name="send_amout_not_balance">余额不足,无法转账</string>
+    <string name="send_amout_not_balance2">HTDF余额不足,无法转账</string>
+    <string name="send_to_e_from_hint">不能转账给自己</string>
+    <string name="send_to_hint">收款人钱包地址</string>
+    <string name="send_amount">转账金额</string>
+    <string name="send_type">转账</string>
+    <string name="send_address_error">地址无效</string>
+    <string name="send_remark_hint">备注</string>
+    <string name="send_commit">正在发送交易…</string>
+    <string name="send_fee_txt">矿工费用</string>
+    <string name="send_not_data">暂无数据</string>
+    <!--walletinfo-->
+    <string name="walletinfo_title">钱包资料</string>
+    <string name="walletinfo_item3">导出私钥</string>
+    <string name="walletinfo_item4">导出keystore</string>
+    <string name="walletinfo_item5">导出助记词</string>
+    <string name="walletinfo_btn">删除钱包</string>
+    <string name="walletinfo_dialog_name_title">钱包名称</string>
+    <string name="coin_dialog_close">取消</string>
+
+    <!--updatepwd-->
+    <string name="updatepwd_new_pwd_hint">新密码</string>
+    <string name="updatepwd_new_pwd_hint2">再次输入新密码</string>
+    <!--testfragment-->
+    <string name="test_solution">正确答案: %s</string>
+    <array name="test1">
+        <item>、以下那种不会导致您的钱包被盗:</item>
+        <item>.他人知道了您的钱包地址</item>
+        <item>.他人知道了您的Keystore并解除了您的Keystore密码</item>
+        <item>.他人知道了您的明文私钥</item>
+        <item>.他人知道了您的助记词</item>
+    </array>
+    <array name="test2">
+        <item>、以下说法正确的是:</item>
+        <item>.升级手机系统和APP版本前一定要做好钱包备份</item>
+        <item>.卸载升级是需要备份钱包,覆盖升级则不需要备份</item>
+        <item>.出现钱包丢失,或者备份信息丢失后,联系客服人员,帮助找回</item>
+        <item>.备份信息是储存在钱包服务器上的,所以不用担心</item>
+    </array>
+    <array name="test3">
+        <item>、以下哪种备份方式正确:</item>
+        <item>.抄写备份助记词,保证抄写顺序正确,抄写清晰,每个单词之间使用空格隔离,并将抄写的助记词妥善保管好,比如放在保险柜里</item>
+        <item>.只将助记词备份在手机设备中</item>
+        <item>.只备份Keystore,没有备份Keystore的密码</item>
+        <item>.只将助记词备份在移动硬盘中</item>
+    </array>
+    <array name="test4">
+        <item>、当您使用钱包转账时,发现自己转错地址,以下做法正确的是?</item>
+        <item>.由于区块链具有不可逆的特性。所以没有办法取消该交易,同时钱包也无法进行交易撤回</item>
+        <item>.第一时间联系官方客服人员,请求取消该交易</item>
+        <item>.第一时间联系官方客服人员,请求将已发送的成功的交易撤回</item>
+        <item>.第一时间联系官方客服人员,请求查明错误的转账地址是谁的,并联系对方</item>
+
+    </array>
+    <array name="test5">
+        <item>、如果您创建了一个新的钱包,您首先要做的是?</item>
+        <item>.立即备份钱包,包括助记词和私钥</item>
+        <item>.立即进行转账交易</item>
+        <item>.立即抄写钱包地址并记住钱包密码</item>
+        <item>.不用做什么特殊操作,放在手机当中就好</item>
+    </array>
+    <array name="test6">
+        <item>、如果没有备份钱包,以下哪种说法正确:</item>
+        <item>.本软件是一个去中心化的钱包,私钥如果忘记,将会丢失该钱包内的所有资产,并且永远无法找回</item>
+        <item>.可以通过钱包地址和交易密码找回</item>
+        <item>.钱包会自主找回</item>
+        <item>.可以向客服人员寻求找回帮助</item>
+    </array>
+    <array name="test7">
+        <item>、当您使用钱包时,发现有一笔不是自己操作的转账记录,下面的做法正确的是:</item>
+        <item>.意识到自己的私钥可能泄露,停止使用该钱包,立即生成一个新的钱包,并做好钱包的备份,将自己的Token迅速转移至新的钱包,然后联系客服人员</item>
+        <item>.要求客服人员立即冻结账户</item>
+        <item>.第一时间联系客服人员</item>
+        <item>.不用理会</item>
+    </array>
+    <string name="test_title">安全评测</string>
+    <string name="test_hint">完成安全评测,确保资产安全</string>
+    <string name="test_splash_hint">为了防止您的数字资产的丢失和被盗，在使用去中心化应用前，需要了解区块链去中心化钱包的基本知识，完成安全评测。通过安全评测后就不会再弹出评测内容</string>
+    <string name="test_splash_title">新用户安全评测</string>
+    <string name="test_splash_btn">开始评测</string>
+    <string name="test_splash_tab_hint">请左右滑动切换下一题</string>
+    <string name="test_finish">提交评测</string>
+    <string name="test_finish2">第%s题回答错误</string>
+    <string name="test_finish4">恭喜您回答正确</string>
+    <string name="test_finish3">请重新进行评测</string>
+    <string name="test_finish5">开始使用</string>
+    <!--coininfo-->
+    <string name="coininfo_txt">近期交易记录</string>
+    <string name="coininfo_send">转账</string>
+    <string name="coininfo_receive">收款</string>
+    <string name="coininfo_no_balance">没有零钱可以转出</string>
+    <string name="coininfo_no_balance2">BTC手续费不足</string>
+    <string name="coininfo_success">成功</string>
+    <string name="coininfo_fail">失败</string>
+    <!--success-->
+    <string name="success_title">交易成功</string>
+    <string name="success_title2">交易正在进行,请等待</string>
+    <string name="success_title3">交易失败</string>
+    <string name="success_item1">付款方</string>
+    <string name="success_item2">收款方</string>
+    <string name="success_item3">交易号</string>
+    <string name="success_item4">区块</string>
+    <string name="success_item">交易时间</string>
+    <string name="success_item6">备注</string>
+    <string name="str_sure">确定</string>
+
+    <string name="exit_app">再按一次退出应用</string>
+    <array name="pwd_type">
+        <item>弱</item>
+        <item>中</item>
+        <item>强</item>
+    </array>
+    <!--scan-->
+    <string name="scan_result_title">扫描结果</string>
+    <string name="scan_title2">扫描二维码</string>
+    <!--msg-->
+    <string name="msg_item_msg">通知:</string>
+    <string name="msg_item_to">接收方:</string>
+
+    <array name="what_list">
+        <item>什么是私钥？</item>
+        <item>什么是助记词？</item>
+        <item>什么是Keystore？</item>
+        <item>什么是矿工费。</item>
+        <item>什么是数字代币？</item>
+        <item>消息中心有哪些内容？</item>
+        <item>导入钱包？</item>
+        <item>转账和收款。</item>
+        <item>转账超时。</item>
+        <item>转账地址填错怎么办？</item>
+        <item>如何防止钱包丢失。</item>
+        <item>如果发现不是自己授权的转账交易怎么办？</item>
+        <item>管理数字代币。</item>
+        <item>交易记录。</item>
+        <item>如何修改钱包密码？</item>
+        <item>Walt开源代码。</item>
+        <item>什么是助记词路径。</item>
+        <item>BSV地址更新说明。</item>
+    </array>
+    <array name="what_list_content">
+        <item>由256位随机字符构成，是用户拥有并使用数字代币的核心。</item>
+        <item>符合区块链BIP39 行业标准，由随机算法生成的12（或15/18/21/24）个有序单词组成。是私钥的易记录表现形式，方便用户备份保管。</item>
+        <item>是私钥或助记词经过用户设置的钱包密码加密保存的文件形式，它只存储在您的这台移动设备中，不会同步至本公司服务器。</item>
+        <item>
+            在一个公链上，任何人都可以读写数据。读取数据是免费的，但是向公链中写数据时需要花费一定费用，这种开销有助于阻止垃圾内容，并通过支付保护其安全性。网络上的任何节点（每个包含账本拷贝的连接设备被称作节点）都可以参与称作挖矿的方式来保护网络。由于挖矿需要计算能力和电费，所以矿工们的服务需要得到一定的报酬，这也是矿工费的由来。
+        </item>
+        <item>指Walt目前支持的数字代币种类，包括但不限于BTC、ETH、USDP、HTDF等。</item>
+        <item>指用户可以接收本公司发出的信息或通知的收件箱。</item>
+        <item>对Walt支持的数字代币，您可以使用Walt生成新钱包或导入相关区块链系统的其它钱包工具生成的兼容钱包。</item>
+        <item>
+            您可以使用Walt的转账、收款功能进行数字代币的管理，即运用私钥进行电子签名，对相关区块链的账本进行修改。转账是指付款方利用收款方的域名或区块链地址进行转账操作，该“转账”行为涉及在相关区块链系统的分布式账本中对该交易的有效记录（而非在Walt上实际交付或转让数字代币）。
+        </item>
+        <item>转账出现此报错有可能是区块链拥堵，转账超时并不能代表转账失败，这笔交易的具体信息请前往 Etherscan https://etherscan.io/ 上查询。
+        </item>
+        <item>
+            先确认转账填写的收币地址是交易所地址、个人地址还是智能合约地址。因为所有的转账交易都是发生在区块链上的，交易一旦完成，没有任何办法修改区块链数据进行交易撤回或者取消交易，只能由收币方将代币转回。\n
+            如果填写的是交易所的地址，那么你转账的所有代币已经转入了交易所的钱包地址，请联系交易所客服，让他们将你误转的代币转回你的钱包。\n
+            如果填写的是个人地址，可以联系对方转回代币。如果不能获得收币地址持有人的个人信息，那么没有任何办法能转回代币。\n
+            如果填写的是智能合约地址，请联系合约开发者转回你的代币。\n
+            建议以后在发起转账交易前务必仔细确认收币地址的正确性，避免资产损失。
+        </item>
+        <item>钱包丢失有以下四种情况：\n
+            1. 用户在删除钱包时, 没有备份钱包。\n
+            我们建议用户在创建完钱包之后, 立即备份钱包, 采用双重备份和多次备份两种策略。双重备份是指 Keystore 备份和助记词备份, 多次备份是指在备份完 Keystore
+            和助记词之后, 要验证备份是否正确, 反复验证, 确认无误即可。\n
+            2. 用户忘记了 Keystore 密码\n
+            我们建议用户使用强度较高的密码加密 Keystore, 这个密码最好是用户随机生成, 不常用的密码。\n
+            3. 遗失了私钥\n
+            这里的私钥包括助记词、Keystore和明文私钥, 有些用户在备份助记词时, 抄写过后并没有做验证, 或者自己过于潦草, 导致后期很难辨识,
+            这些都会导致无法再找到自己的钱包。所以我们在备份钱包时要仔细认真, 在后期保管钱包时, 要善于使用一些安全的管理工具, 确保自己可以随时找到私钥。\n
+            4. 备份错钱包\n
+            备份错钱包是指. 用户在Walt 有两个钱包, 例如一个是 A 钱包, 一个是 B 钱包, 当用户想备份 A 钱包时, 却错误的备份了 B
+            钱包的私钥。所以我们建议用户在备份钱包之后, 一定要将备份的私钥导入钱包, 验证备份是否正确。
+        </item>
+        <item>首先，意识到自己的私钥可能泄露, 立即更换钱包, 并做好钱包备份。然后，将自己钱包的资产迅速转移至新钱包。并且排查自己可能泄露私钥的情况</item>
+        <item>您可以从Walt操作界面添加、保管或移除Walt所支持的数字代币（ETH、BTC除外）。</item>
+        <item>我们将通过区块链系统拷贝您全部或部分的交易记录。但用户应以区块链系统的最新交易记录为准。</item>
+        <item>在去中心化钱包中，所有用户的身份验证内容，如交易密码、私钥、助记词等都保存在用户手机本地，并不保存在中心化服务器中，所有用户忘记密码无法通过第三方机构来重置。</item>
+        <item>指本公司公开宣布开源的部分Walt软件代码，允许开发者用户在遵循相关开源协议及本公司通知的规定下使用（包括二次开发）该部分开源代码。</item>
+        <item>助记词是需要配合路径使用的, 相同的助记词配合不同的路径也会生成不同的地址。 Walt的HTDF默认路径是
+            m\'44\'346\'0\'0，USDP的默认路径是m\'44\'345\'0\'0。 如果你导入助记词, 想更改路径, 则会生成新的钱包地址。一定要记住自己的路径,
+            如果自己设定了一个自定义路径, 然后导入助记词的时候又忘记了这个路径的话, 那就可能会造成钱包的丢失。
+        </item>
+        <item>3.1.4版本开始使用标准的BSV路径m\'44\'346\'0\'0,旧版本的BSV路径和BCH的一致，旧版本资产找回BSV资产请用BCH的私钥导入方可找回资产。
+        </item>
+    </array>
+    <string name="edittext_input_type">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghigjklmnopqrstuvwxyz0123456789</string>
+    <string name="coin_type_title">选择主链</string>
+    <string name="coin_type_hint">请选择主链</string>
+    <array name="sp_language">
+        <item>中文助记词</item>
+        <item>英文助记词</item>
+    </array>
+    <string name="add_addr_title">地址本信息</string>
+    <string name="add_addr_name">姓名</string>
+    <string name="add_addr_address">地址</string>
+    <string name="add_addr_addr_type">选择地址类型</string>
+    <string name="add_addr_input">输入有效地址</string>
+    <string name="add_addr_name_hint">请输入名称</string>
+    <string name="add_addr_addr_hint">请输入地址</string>
+    <string name="add_addr_remarck">描述(选填)</string>
+    <string name="address_type_title">地址类型</string>
+    <string name="addr_not_data">您还没有地址,快添加吧</string>
+    <string name="addr_list_title">地址本</string>
+    <string name="save">保存</string>
+    <string name="type_title1">语言选择</string>
+    <string name="type_title3">路径选择</string>
+    <array name="path_type">
+        <item>默认</item>
+        <item>旧版本(m\'44\'145\'0\'0)</item>
+    </array>
+
+
+    <string name="add_token_title">币种管理</string>
+
+    <string name="assets_wen">稳定币</string>
+    <array name="add_asset_tab">
+        <item>主链</item>
+        <item>稳定币</item>
+        <item>ERC-20</item>
+        <item>HRC-20</item>
+    </array>
+    <array name="add_asset_tab2">
+        <item>主链</item>
+        <item>稳定币</item>
+        <item>ERC-20</item>
+    </array>
+    <string name="add_token_hint">输入代币名称或代币合约地址</string>
+    <string name="add_token_custom_hint">代币合约地址</string>
+    <string name="add_token_custom_hint2">代币符号</string>
+    <string name="add_token_custom_hint3">精确小数点</string>
+    <string name="add_token_custom_hint6">合约地址无效</string>
+
+    <string name="login_forget_set_pwd">设置新密码</string>
+    <!--recharge-->
+    <string name="recharge_walt">选择钱包</string>
+    <string name="recharge_hint_no_price">余额不足</string>
+    <!--pwdsetting-->
+    <string name="delete">删除</string>
+    <string name="fee_recommend">推荐</string>
+    <string name="withdraw_price_balance">可用余额</string>
+
+    <string name="buy_plan_item10">矿池计划协议</string>
+    <string name="buy_plan_item11">华特钱包矿池计划用户协议</string>
+    <string name="buy_plan_item12">1、参与方式及额度 矿池计划仅支持USDP/USDT点对点转入指定地址参与，实际转入的额度，请以页面提示为准。 温馨提示：转入指定的官方钱包地址，如地址转错误导致的损失用户自行承担责任。\n
+        2、收益规则 T日转入参与挖矿，一年后T+1日获得双倍市值的HTDF。 例：用户2019年8月28日用10000 USDP/USDT (10000美金）参与挖矿，则2020年8月29日可获得双倍市值（20000美金）的HTDF。\n
+        3、参与挖矿 本产品限年满18岁具有民事行为能力的用户参与，参与前需在华特钱包完成注册以及实名认证。矿池计划以1000枚USDP/USDT为基准单位（最低1000枚起），详情以实际活动页面信息为准。 本活动参与成功后不可撤销。 \n
+        4、开始计算收益 参与矿池计划成功后当日开始计算收益。若参与失败，参与活动的USDP/USDT将于当日返还至转入钱包地址。 \n
+        5、到期结算 以一个自然年为结算周期，即T日转入，一年后T+1日结算。HTDF以结算日当天Hetbi交易所上午9:00的市值进行结算。 结算完成用户可将获得的HTDF转入Hetbi交易所交易，还可继续参与挖矿活动。\n
+        6、退出 参与矿池计划期内，如用户在未到期情况下提出强制退出计划的，本服务协议提及保本收益条款自动丧失法律效力，且用户需承担认购资产*20%的违约金，本协议书效力终止。</string>
+    <string name="my_plan_info_item3">付款地址</string>
+    <string name="my_plan_info_item4">收款地址</string>
+    <string name="back_licai">返回“我的理财”</string>
+    <string name="ad_txt">关于HET、USDP、BEI 旧链的转账服务关闭及替换HRC20类型新币公告</string>
+
+    <string name="str_confirm">区块确认</string>
+    <string name="str_go_block">去区块浏览器查看详情</string>
+    <string name="str_title_block">区块浏览器</string>
+    <string name="send_fee">转账手续费:(%s)</string>
+    <string name="send_fail">广播失败</string>
+
+    <string name="mortgage_title">委托</string>
+    <string name="commission_hint">请输入HTDF数量</string>
+    <string name="commission_hint6">委托HTDF量必须大于0</string>
+    <string name="commission_hint7">请选择委托节点</string>
+    <string name="commission_btn">提取</string>
+    <string name="htdf_memo1">多元化挖矿委托</string>
+    <string name="htdf_memo2">多元化挖矿收益提取</string>
+    <string name="htdf_memo3">多元化挖矿委托赎回</string>
+    <string name="htdf_mortgage">多元化挖矿</string>
+    <array name="sort">
+        <item>委托量</item>
+        <item>委托人数</item>
+        <item>预计年化收益</item>
+    </array>
+    <string name="commission_node_hint1">我的委托</string>
+    <string name="commission_node_hint2">当前收益(HTDF)</string>
+    <string name="commission_node_hint3">委托数额(HTDF)</string>
+    <string name="commission_node_hint4">收益提取</string>
+    <string name="commission_node_hint6">节点名称</string>
+    <string name="commission_node_hint7">解除委托</string>
+    <string name="commission_node_hint8">委托量(HTDF)</string>
+    <string name="commission_node_hint9">预计年化收益</string>
+    <string name="commission_node_hint10">委托人数</string>
+    <string name="commission_node_hint11">简介</string>
+    <string name="commission_node_hint12">搜索验证节点地址/名称</string>
+    <string name="commission_node_hint14">多元化挖矿</string>
+    <string name="commission_node_hint15">节点详情</string>
+    <string name="commission_node_hint16">去委托</string>
+    <string name="commission_node_hint17">委托数量(HTDF)</string>
+    <string name="commission_node_hint18">全部</string>
+    <string name="commission_node_hint19">委托教程</string>
+    <string name="commission_node_hint20">矿工费0.03HTDF</string>
+    <string name="commission_node_hint21">矿工费%sHTDF</string>
+    <string name="commission_node_hint22">说明:HRC代币转账须执行智能合约,每次执行需要消耗部分HTDF,若矿工费不足,广播之后失败也会扣除矿工费,该矿工费为可接受最大矿工费,并不是实际消费的矿工费。</string>
+    <string name="commission_node_hint23">再次委托</string>
+    <string name="commission_node_hint24">委托提取</string>
+    <string name="commission_node_hint25">提取数量(HTDF)</string>
+    <string name="commission_node_hint26">可提取数量%sHTDF</string>
+    <string name="commission_node_hint27">手续费不足</string>
+    <string name="commission_node_hint28">解除委托申请</string>
+    <string name="commission_node_hint29">确定要发起解除委托申请吗？\n解除委托关系后您将不再享有委托收益，请谨慎操作</string>
+    <string name="commission_node_hint31">解除委托提示说明</string>
+    <string name="commission_node_hint32">解除委托申请通过后，委托到节点的HTDF需在委托记录中点击提取，才能到账</string>
+    <string name="commission_node_hint36">解除数量</string>
+    <string name="commission_node_hint37">收益提取详情</string>
+    <string name="commission_node_hint38">请输入申请数量</string>
+    <string name="commission_node_hint39">申请数量必须大于0</string>
+    <string name="commission_node_hint40">解除委托申请记录</string>
+    <string name="commission_node_hint41">申请时间:%s</string>
+    <string name="commission_node_hint42">申请数量:%s</string>
+    <string name="commission_node_hint43">提取</string>
+    <string name="commission_node_hint44">重新申请</string>
+    <string name="commission_node_hint48">解委托申请不能超过 %s HTDF</string>
+    <string name="commission_node_hint49">可解除数量: %s HTDF</string>
+    <string name="commission_node_hint50">提取失败</string>
+    <string name="commission_node_hint51">提取未到账订单最多可同时进行7笔，超过将提取失败，需等待其他订单完成。</string>
+    <string name="commission_node_hint52">已委托</string>
+    <string name="commission_node_hint53">申请数量</string>
+    <string name="commission_node_hint54">转出说明</string>
+    <string name="commission_node_hint55">解除进度</string>
+    <string name="commission_node_hint56">申请成功</string>
+    <string name="commission_node_hint57">交易处理中</string>
+    <string name="commission_node_hint58">到账成功</string>
+    <string name="commission_node_hint59">申请时间</string>
+    <string name="commission_node_hint60">驳回原因</string>
+    <string name="commission_node_hint61">状态：申请中</string>
+    <string name="commission_node_hint62">状态：不通过</string>
+    <string name="commission_node_hint63">状态：申请通过-待提取</string>
+    <string name="commission_node_hint64">状态：申请通过-已提取待到账</string>
+    <string name="commission_node_hint65">状态：申请通过-已完成</string>
+    <string name="commission_node_hint66">驳回</string>
+    <string name="commission_node_hint67">记录详情</string>
+    <string name="commission_node_hint68">请耐心等待节点管理员审核。审核通过后在委托记录点击提取，提取完成，委托的HTDF才能到账。</string>
+    <string-array name="htdf_state">
+        <item>申请中</item>
+        <item>申请中</item>
+        <item>驳回</item>
+        <item>通过</item>
+        <item>提取中</item>
+        <item>待到账</item>
+        <item>提取失败</item>
+        <item>完成</item>
+    </string-array>
+    <string name="unmortgage_hint">注:委托提取的HTDF大约需2周后才会到账</string>
+    <string name="unit_people">人</string>
+    <string name="eth_fee_title">高级模式</string>
+    <string name="eth_fee_hint">Gas价格(Gwei)</string>
+    <string name="eth_fee_hint2">Gas限制</string>
+    <string name="eth_fee_hint3">请输入Gas价格</string>
+    <string name="eth_fee_hint4">请输入Gas限制</string>
+    <string name="eth_fee_hint5">Gas限制必须大于等于21000</string>
+    <string name="eth_fee_hint6">Gas价格必须大于%s</string>
+    <string name="htdf_contract_create">创建合约</string>
+
+    <string name="xlm_fee">矿工费0.00001XLM</string>
+    <string name="ad_content">预计Walt钱包将于新加坡时间2020年09月15日后，关闭HET、USDP、BEI 旧链的转账交易服务，目前Walt钱包已经支持HRC20-HET、HRC20-USDP、HRC20-BEI代币转账。
+        如您在Walt钱包持有HET、USDP、BEI 旧链币，可将旧链币转账到Hetbi交易所（www.hetbi.me）兑换为HRC20类型的HRC20-HET、HRC20-USDP、HRC20-BEI的新币。操作HRC20类型代币转账时，请选择HRC20链类型进行交易。本次HRC20类型代币替换工作将持续三个月，截止日期为09月15日。
+    </string>
+    <string name="ad_time">Walt钱包\n2020年06月12日</string>
+    <string name="feedback_hint14">提交成功</string>
+
+    <string name="quotes_all">全部</string>
+
+
+    <string name="find_hint1">理财活动</string>
+    <string name="find_htdf_title">HTDF多元化挖矿</string>
+    <string name="find_htdf_title1">专属矿工的收益福利</string>
+    <string name="find_btc_choice_walt">请先在左上角选择钱包</string>
+    <string name="find_hint2">您尚未创建有HTDF的钱包，请先创建钱包，并添加HTDF币种地址，才能使用HTDF多元化挖矿</string>
+    <string name="find_import">去创建/导入钱包</string>
+    <string name="index_ad_title">公告消息</string>
+
+    <string name="search_hint">请输入搜索内容</string>
+    <string name="request_permissions">请到应用管理打开权限</string>
+
+    <string-array name="transfer_type">
+        <item>全部</item>
+        <item>转账</item>
+        <item>收款</item>
+    </string-array>
+    <string name="transfer_other">其他</string>
+    <string name="tranfer_hint1">交易类型</string>
+    <string name="tranfer_hint2">交易类型包括转账、收款、其他</string>
+    <string name="tranfer_hint3">转账和收款：用户发起的链上转账收款交易\n其他：HRC20发生交易扣除的手续费、多元化挖矿的交易</string>
+    <string name="tranfer_hint4">交易类型包括转账、收款</string>
+    <string name="tranfer_hint5">转账和收款：用户发起的链上转账收款交易</string>
+    <string name="tranfer_hint6">转账和收款：用户发起的链上转账收款交易\n其他：ERC20发生交易扣除的手续费</string>
+    <string name="node_tab_left">超级节点</string>
+    <string name="node_tab_right">我的委托</string>
+    <string name="node_my_hint1">总体概况</string>
+    <string name="node_my_hint2">委托节点数</string>
+    <string name="node_my_hint3">委托总数额</string>
+    <string name="node_my_hint5">委托总数</string>
+    <string name="node_my_hint4">委托总收益</string>
+    <string name="node_orderby">排序</string>
+    <string-array name="notice_tab">
+        <item>转账通知</item>
+        <item>系统消息</item>
+    </string-array>
+    <string name="str_tiqu">预计 %s</string>
+    <string name="str_tiqu1">提取委托的HTDF将在%s到账，请耐心等待！</string>
+    <string name="str_tiqu2">委托到%s的HTDF已提取到账</string>
+    <string name="history">历史记录</string>
+    <string name="weituo_history">委托记录</string>
+</resources>
+

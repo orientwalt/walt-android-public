@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_node"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableLoadmore="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp16"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/bg_c_shape2">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:layout_marginTop="@dimen/dp16"
+                    android:text="HTDF Wallet"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dp16"
+                    android:layout_marginRight="@dimen/dp16"
+                    android:text="0.00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp15" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="@dimen/dp160"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_name"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:ellipsize="middle"
+                    android:singleLine="true"
+                    android:text="- -"
+                    android:textColor="@color/alpha_50_white"
+                    android:textSize="@dimen/sp13" />
+
+                <TextView
+                    android:id="@+id/tv_rmb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_name"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/dp8"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:layout_marginRight="@dimen/dp16"
+                    android:layout_marginBottom="@dimen/dp24"
+                    android:layout_toRightOf="@+id/tv_address"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="￥0.00"
+                    android:textColor="@color/alpha_50_white"
+                    android:textSize="@dimen/sp13" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_price"
+                android:layout_marginHorizontal="@dimen/dp16"
+                android:layout_marginTop="-10dp"
+                android:background="@drawable/bg_c_shape"
+                android:elevation="@dimen/dp1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:layout_marginTop="@dimen/dp16"
+                    android:text="@string/node_my_hint1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp15" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp16"
+                    android:layout_marginTop="@dimen/dp12">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:text="@string/node_my_hint2"
+                        android:textColor="@color/alpha_50_white"
+                        android:textSize="@dimen/sp13" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/node_my_hint3"
+                        android:textColor="@color/alpha_50_white"
+                        android:textSize="@dimen/sp13" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:text="@string/node_my_hint4"
+                        android:textColor="@color/alpha_50_white"
+                        android:textSize="@dimen/sp13" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp16"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:layout_marginBottom="@dimen/dp16">
+
+                    <TextView
+                        android:id="@+id/tv_num"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp25"
+                        android:layout_weight="0.6"
+                        android:gravity="left"
+                        android:paddingRight="@dimen/dp8"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp18" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_all"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp25"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="@dimen/dp18"
+                        android:autoSizeMinTextSize="@dimen/dp10"
+                        android:gravity="center"
+                        android:enabled="false"
+                        android:text="~"
+                        android:textColor="@color/white"
+                        app:autoSizeStepGranularity="1dp"
+                        app:autoSizeTextType="uniform" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_in"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp25"
+                        android:layout_weight="1"
+                        android:autoSizeMaxTextSize="@dimen/dp18"
+                        android:autoSizeMinTextSize="@dimen/dp10"
+                        android:gravity="right|center_vertical"
+                        android:paddingLeft="@dimen/dp8"
+                        android:enabled="false"
+                        android:text="~"
+                        android:textColor="@color/white"
+                        app:autoSizeStepGranularity="1dp"
+                        app:autoSizeTextType="uniform" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ll_center"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/dp16"
+                android:background="@drawable/layout_top"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_tuijian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/dp16"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:drawableLeft="@mipmap/good_icon"
+                    android:drawablePadding="@dimen/dp8"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/fee_recommend"
+                    android:textColor="@color/txt_454545"
+                    android:textSize="@dimen/sp18"
+                    android:visibility="gone" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcv_node"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </RelativeLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</RelativeLayout>

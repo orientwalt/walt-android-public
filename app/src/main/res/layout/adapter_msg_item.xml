@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/dp16">
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp12"
+        android:layout_marginBottom="@dimen/dp8"
+        android:text="2019-05-09"
+        android:textSize="@dimen/dp16" />
+
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_msg"
+        android:layout_marginRight="@dimen/dp8"
+        android:layout_marginBottom="@dimen/dp12"
+        android:text="8888888888888888888"
+        android:textSize="@dimen/dp12" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:layout_below="@+id/tv_address"
+        android:background="@color/line_dddddd" />
+</RelativeLayout>

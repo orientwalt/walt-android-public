@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp70"
+        android:layout_marginHorizontal="@dimen/dp12"
+        android:layout_marginBottom="@dimen/dp8"
+        android:background="@drawable/layout_selector"
+        android:elevation="@dimen/dp1">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="@dimen/dp32"
+            android:layout_height="@dimen/dp32"
+            android:layout_centerVertical="true"
+            android:layout_marginVertical="@dimen/dp12"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginRight="@dimen/dp8"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/htdf_icon" />
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:text="1111"
+            android:textColor="@color/txt_333333"
+            android:textSize="@dimen/sp15" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_marginRight="@dimen/dp16"
+            android:layout_toLeftOf="@+id/tv_price2"
+            android:text="123"
+            android:textColor="@color/tx_8F95A9"
+            android:textSize="@dimen/sp12" />
+
+
+        <TextView
+            android:id="@+id/tv_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginBottom="@dimen/dp16"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:ellipsize="middle"
+            android:maxWidth="@dimen/dp120"
+            android:singleLine="true"
+            android:text="111111111111111111111111111111111"
+            android:textColor="@color/txt_8f95a9"
+
+            android:textSize="@dimen/sp12" />
+
+        <RelativeLayout
+            android:id="@+id/rl_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true">
+
+            <com.weiyu.baselib.widget.RoundLabelTextView
+                android:id="@+id/round_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                app:angle="bottomRight"
+                app:backGroundColor="#3B83FC"
+                app:contentMarginStart="0dp"
+                app:contentTextColor="#ffffff"
+                app:contentTextSize="@dimen/sp10"
+                app:labelLength="@dimen/dp38"
+                app:radius="@dimen/dp8"
+                app:textFlip="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/round_text"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp4"
+                android:layout_marginBottom="@dimen/dp4"
+                android:src="@mipmap/gou3" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

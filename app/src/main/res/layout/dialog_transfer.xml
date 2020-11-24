@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_shape">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp20"
+        android:text="@string/tranfer_hint1"
+        android:textColor="@color/txt_333333"
+        android:textSize="@dimen/sp16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_ad_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginHorizontal="@dimen/dp24"
+        android:layout_marginTop="@dimen/dp20"
+        android:text="@string/tranfer_hint2"
+        android:textColor="@color/tx_364964"
+        android:textSize="@dimen/sp14" />
+
+    <TextView
+        android:id="@+id/tv_ad_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_ad_title"
+        android:layout_marginHorizontal="@dimen/dp24"
+        android:layout_marginTop="@dimen/dp4"
+        android:layout_marginBottom="@dimen/dp28"
+        android:text="@string/tranfer_hint3"
+        android:textColor="@color/txt_333333"
+        android:textSize="@dimen/sp13" />
+
+    <com.weiyu.baselib.widget.RoundLabelTextView
+        android:id="@+id/round_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        app:angle="topRight"
+        app:backGroundColor="#F5F5FA"
+        app:contentMarginStart="0dp"
+        app:contentTextColor="#ffffff"
+        app:contentTextSize="@dimen/sp10"
+        app:labelLength="@dimen/dp56"
+        app:radius="@dimen/dp8"
+        app:textFlip="true" />
+
+    <com.weiyu.baselib.widget.ThumbnailView
+        android:id="@+id/tv_close"
+        android:layout_width="@dimen/dp32"
+        android:layout_height="@dimen/dp32"
+        android:layout_alignParentRight="true"
+        android:scaleType="center"
+        android:src="@mipmap/close_icon2" />
+</RelativeLayout>
