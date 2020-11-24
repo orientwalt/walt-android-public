@@ -40,7 +40,5 @@
 - [etherscan](https://etherscan.io/) ETH
 - [insight](https://insight.dash.org/insight/) DASH
 
->开发者
-- 575256725@qq.com
 
 
